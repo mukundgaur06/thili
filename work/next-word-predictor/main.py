@@ -4,6 +4,7 @@
     python main.py train                       # fit on train.txt, save models/wordflow_model.json
     python main.py predict "i love machine"    # inference from the saved model
     python main.py generate "the model" --seed 7
+    python main.py write --genre fantasy       # interactive story writing
     python main.py evaluate                    # held-out metrics on test.txt
     python main.py demo                        # all of the above in one go
 
@@ -25,6 +26,7 @@ from wordflow.generation import TextGenerator  # noqa: E402
 from wordflow.ngram_model import NGramModel  # noqa: E402
 from wordflow.predictor import NextWordPredictor, order_name  # noqa: E402
 from wordflow.preprocessing import tokenize  # noqa: E402
+from wordflow.writer import WritingSession, run_writer  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
 CORPUS_DIR = ROOT / "corpus"
@@ -81,6 +83,31 @@ def cmd_generate(args: argparse.Namespace) -> None:
     print(f"[{len(result.steps)} steps, stopped by {result.stop_reason}, seed={args.seed}]")
 
 
+def cmd_write(args: argparse.Namespace) -> None:
+    model_path = args.model
+    if args.genre:
+        genre_dir = CORPUS_DIR / args.genre
+        model_path = ROOT / "models" / f"{args.genre}_model.json"
+        if not model_path.is_file():
+            train_file = genre_dir / "train.txt"
+            if not train_file.is_file():
+                source = genre_dir / f"{args.genre}.txt"
+                if not source.is_file():
+                    raise FileNotFoundError(f"no corpus for genre '{args.genre}' in {genre_dir}")
+                corpus = corpus_from_file(source)
+                train, test = split_train_test(corpus.sentences, args.test_fraction, args.seed)
+                (genre_dir / "train.txt").write_text("\n".join(train) + "\n", encoding="utf-8")
+                (genre_dir / "test.txt").write_text("\n".join(test) + "\n", encoding="utf-8")
+            print(f"Training the '{args.genre}' model (first run only)...")
+            NGramModel(args.order, args.min_count).fit(read_sentences(train_file)).save(model_path)
+    model = NGramModel.load(model_path)
+    session = WritingSession(
+        model, args.opening, k=args.k, order=args.order, top_k=args.top_k,
+        temperature=args.temperature, creative=args.creative, seed=args.seed,
+    )
+    run_writer(session)
+
+
 def cmd_evaluate(args: argparse.Namespace) -> None:
     model = NGramModel.load(args.model)
     test = read_sentences(args.test)
@@ -131,6 +158,11 @@ def build_parser() -> argparse.ArgumentParser:
     generate = sub.add_parser("generate", parents=[common], help="sample text")
     generate.add_argument("seed_text", nargs="?", default="")
     generate.set_defaults(func=cmd_generate)
+    write = sub.add_parser("write", parents=[common], help="interactive story writing with suggestions")
+    write.add_argument("opening", nargs="?", default="", help="first words of the story")
+    write.add_argument("--genre", help="use corpus/<genre>/ and models/<genre>_model.json (e.g. fantasy)")
+    write.add_argument("--creative", action="store_true", help="draw suggestions at random instead of top-N")
+    write.set_defaults(func=cmd_write, k=0.01, min_count=2)
     sub.add_parser("evaluate", parents=[common], help="held-out metrics").set_defaults(func=cmd_evaluate)
     demo = sub.add_parser("demo", parents=[common], help="run the full pipeline")
     demo.set_defaults(func=cmd_demo, text="i love machine", seed_text="the model")

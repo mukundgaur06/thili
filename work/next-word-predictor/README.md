@@ -32,6 +32,38 @@ Input:  "I love machine"
 | Interface | 8-page dashboard + CLI (`main.py`) + JSON API |
 | Tests | 93 `unittest` tests (also run under pytest) |
 
+### Creative Writing Prompter (CLI)
+
+An interactive story-writing mode for aspiring writers. It uses a genre corpus (fantasy,
+built from eight public-domain books on Project Gutenberg) and suggests the next word
+as you write.
+
+```
+python scripts/build_fantasy_corpus.py     # one-off: download and clean the books
+python main.py write --genre fantasy       # first run trains and caches the model
+python main.py write "once upon a" --genre fantasy --creative
+```
+
+```
+  once upon a
+
+  1. time              16.61%
+  2. stone              1.92%
+  ...
+> 1            accept a suggestion      > r   new suggestions
+> dragons      type your own words      > m   most-likely <-> creative suggestions
+> a 20         model writes 20 words    > u   undo      > s story.txt   save      > q   quit
+```
+
+- **Most likely** mode lists the top-N words by add-k probability; **creative** mode draws
+  N words at random from the same distribution (flattened by `--temperature`), so
+  repeated suggestions differ.
+- Suggestions use add-k smoothing with `k = 0.01` by default for `write`; `k = 1` is far
+  too strong for a 7,000-word vocabulary (held-out trigram perplexity 2352 at `k = 1`
+  vs 535 at `k = 0.01`). The `a` command samples from observed continuations only.
+- The logic lives in `wordflow/writer.py` (`WritingSession`) and is covered by
+  `tests/test_writer.py`.
+
 ### The dashboard
 
 | Page | What you can do |
