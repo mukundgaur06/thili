@@ -1,0 +1,607 @@
+{
+ "run": "cpt-fresh",
+ "n_generated": 10000,
+ "nonempty": 9981,
+ "generation_seconds": 533.6,
+ "generation_stats": {
+  "baskets": 10000,
+  "mean_items": 6.7213,
+  "median_items": 6.0,
+  "share_repeated": 0.02363451481696688,
+  "invalid_tokens": 0,
+  "share_cut_off": 0.0,
+  "share_empty": 0.0019,
+  "temperature": 1.0,
+  "seed": 0
+ },
+ "min_support": 0.001,
+ "planted_recall": {
+  "estimate": 0.28125,
+  "bootstrap": {
+   "lo": 0.25,
+   "hi": 0.3125,
+   "n_boot": 100,
+   "resampled": "generated baskets"
+  }
+ },
+ "planted_by_support": {
+  "0.03": {
+   "recovered": 7,
+   "of": 8,
+   "mean_found_support": 0.004521090071135157
+  },
+  "0.01": {
+   "recovered": 2,
+   "of": 8,
+   "mean_found_support": 0.0007514277126540427
+  },
+  "0.004": {
+   "recovered": 0,
+   "of": 8,
+   "mean_found_support": 0.0
+  },
+  "0.0015": {
+   "recovered": 0,
+   "of": 8,
+   "mean_found_support": 0.0
+  }
+ },
+ "planted_detail": [
+  {
+   "items": [
+    0,
+    82
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.0035066626590521993,
+   "recovered": true
+  },
+  {
+   "items": [
+    131,
+    819
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.015529506061516882,
+   "recovered": true
+  },
+  {
+   "items": [
+    45,
+    298,
+    424
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.004909327722673079,
+   "recovered": true
+  },
+  {
+   "items": [
+    309,
+    363,
+    710
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    58,
+    97,
+    418,
+    421
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.0018034265103697023,
+   "recovered": true
+  },
+  {
+   "items": [
+    117,
+    491,
+    825,
+    947
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.004809137360985873,
+   "recovered": true
+  },
+  {
+   "items": [
+    68,
+    117,
+    167,
+    267,
+    411
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.0037070433824266105,
+   "recovered": true
+  },
+  {
+   "items": [
+    45,
+    117,
+    250,
+    819,
+    947
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.0019036168720569081,
+   "recovered": true
+  },
+  {
+   "items": [
+    68,
+    144
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.0047089469992986676,
+   "recovered": true
+  },
+  {
+   "items": [
+    571,
+    881
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.001302474701933674,
+   "recovered": true
+  },
+  {
+   "items": [
+    662,
+    670,
+    676
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    427,
+    639,
+    930
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    465,
+    491,
+    498,
+    545
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    29,
+    267,
+    368,
+    881
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    82,
+    103,
+    117,
+    327,
+    334
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    97,
+    267,
+    385,
+    600,
+    881
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    216,
+    231
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    206,
+    639
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    760,
+    766,
+    787
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    103,
+    418,
+    595
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    787,
+    790,
+    805,
+    825
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    144,
+    309,
+    571,
+    825
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    450,
+    498,
+    516,
+    519,
+    536
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    163,
+    327,
+    491,
+    766,
+    947
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    450,
+    455
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    0,
+    752
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    144,
+    571,
+    576
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    418,
+    734,
+    851
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    163,
+    363,
+    918,
+    959
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    58,
+    259,
+    427,
+    670
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    851,
+    881,
+    889,
+    902,
+    908
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  },
+  {
+   "items": [
+    144,
+    421,
+    610,
+    790,
+    991
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0,
+   "recovered": false
+  }
+ ],
+ "precision_vs_truth": 0.7051578137028484,
+ "recall_bands": [
+  {
+   "band": [
+    0.001,
+    0.002
+   ],
+   "true": 76,
+   "found": 0,
+   "recall": 0.0
+  },
+  {
+   "band": [
+    0.002,
+    0.005
+   ],
+   "true": 85,
+   "found": 16,
+   "recall": 0.18823529411764706
+  },
+  {
+   "band": [
+    0.005,
+    0.01
+   ],
+   "true": 5,
+   "found": 4,
+   "recall": 0.8
+  },
+  {
+   "band": [
+    0.01,
+    0.03
+   ],
+   "true": 83,
+   "found": 57,
+   "recall": 0.6867469879518072
+  },
+  {
+   "band": [
+    0.03,
+    1.0
+   ],
+   "true": 83,
+   "found": 82,
+   "recall": 0.9879518072289156
+  }
+ ],
+ "frequent_in_generated": 3517,
+ "multi_item_frequent_in_generated": 2598,
+ "labels_of_generated_itemsets": {
+  "not frequent in real data": 766,
+  "chance": 1290,
+  "planted": 9,
+  "part": 150,
+  "extension": 383
+ },
+ "pair_same_category_share": {
+  "generated": 0.14457228614307155,
+  "real": 0.1345875542691751
+ },
+ "item_frequency_correlation": 0.9878263763466488,
+ "mean_basket_size": {
+  "generated": 6.734094780082156,
+  "real": 7.17947
+ },
+ "examples": [
+  [
+   "Limes Pack",
+   "Trailmark Water Bottle Kids",
+   "Garlic Pack",
+   "Bluebell Creamery Cheddar Cheese Regular",
+   "Tomatoes Pack"
+  ],
+  [
+   "Nimbus Tech Headphones Pro",
+   "Meadow Farm Eggs Regular"
+  ],
+  [
+   "Voltix Smartphone Standard",
+   "Voltix USB Cable Standard",
+   "Crunchworks Potato Chips Regular"
+  ],
+  [
+   "Cloud Nine Dairy Mozzarella Organic",
+   "Oven Lane Bread Classic",
+   "Quill House Cookbook Paperback"
+  ],
+  [
+   "Garlic Pack",
+   "Northglow Shampoo Regular",
+   "Crunchworks Pretzels Regular",
+   "Oven Lane Bread Classic",
+   "Voltix USB Cable Lite"
+  ],
+  [
+   "Lumiere Shampoo Travel Size",
+   "Apples Loose",
+   "Garlic Pack",
+   "Potatoes Organic",
+   "Pure Petal Face Cream Regular",
+   "Arcwave Keyboard Standard",
+   "Stridewell Sports Socks Kids",
+   "Alpine Pure Eggs Regular",
+   "Meadow Farm Milk Regular"
+  ],
+  [
+   "Voltix AA Batteries Lite",
+   "Millstone Bread Classic",
+   "Voltix USB Cable Lite"
+  ],
+  [
+   "Lantern Press Notebook Pocket",
+   "Cloud Nine Dairy Milk Regular",
+   "Snaxly Chocolate Bar Share Size",
+   "Alpine Pure Milk Large",
+   "Golden Crust Bread Classic",
+   "Harvest Table Olive Oil Regular",
+   "Potatoes Organic",
+   "Brewhaus Coffee Regular",
+   "Urban Loom Socks Premium",
+   "Nimbus Tech Laptop Bag Lite",
+   "Harvest Table Jam Organic"
+  ],
+  [
+   "Voltix Screen Protector Standard",
+   "Arcwave Phone Case Lite",
+   "Onions Organic",
+   "Lemons Pack",
+   "Lumiere Body Wash Regular",
+   "Apples Loose",
+   "Casa Verde Pasta Sauce Value Size"
+  ],
+  [
+   "Bananas Loose",
+   "Cloud Nine Dairy Eggs Regular",
+   "Cloud Nine Dairy Milk Regular",
+   "Northglow Conditioner Regular",
+   "Arcwave Phone Case Standard"
+  ],
+  [
+   "Lumiere Body Wash Salon",
+   "Tidewater Cola Regular",
+   "Fizzco Cola Large",
+   "Meadow Farm Butter Large"
+  ],
+  [
+   "Crunchworks Potato Chips Mini",
+   "Lantern Press Notebook Paperback",
+   "Apples Pack",
+   "Nimbus Tech Wireless Mouse Standard",
+   "Meadow Farm Yogurt Regular",
+   "Spice Route Pasta Sauce Organic",
+   "Northglow Toothpaste Regular"
+  ]
+ ]
+}

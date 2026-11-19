@@ -1,0 +1,27 @@
+{
+ "merge": {
+  "adapter": "lora-r1-c_attn.safetensors",
+  "max_logit_diff": 6.9141387939453125e-06,
+  "acc_unmerged": 0.8795871559633027,
+  "acc_merged": 0.8795871559633027,
+  "unmerge_diff": 3.814697265625e-06,
+  "stripped_diff": 6.9141387939453125e-06,
+  "ms_unmerged": 3904.6,
+  "ms_merged": 3319.2,
+  "ms_plain": 3903.0
+ },
+ "swap": {
+  "adapters": {
+   "lora-r1-c_attn": {
+    "swap_ms": 8.77,
+    "test_acc": 0.8795871559633027
+   }
+  },
+  "base_lm_diff_when_disabled": 0.0,
+  "full_reload_ms": 2349,
+  "other_layouts": [
+   "lora-r8-c_attn-n1000",
+   "lora-r8-c_attn"
+  ]
+ }
+}

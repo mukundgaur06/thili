@@ -1,0 +1,1789 @@
+{
+ "environment": {
+  "torch": "2.10.0+cpu",
+  "python": "3.10.11",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "cpu_count": 14,
+  "threads": 4,
+  "quantized_engine": "onednn",
+  "supported_engines": [
+   "onednn"
+  ]
+ },
+ "dataset": "fashion_mnist",
+ "classes": [
+  "T-shirt/top",
+  "Trouser",
+  "Pullover",
+  "Dress",
+  "Coat",
+  "Sandal",
+  "Shirt",
+  "Sneaker",
+  "Bag",
+  "Ankle boot"
+ ],
+ "split_sizes": {
+  "train": 55000,
+  "val": 5000,
+  "test": 10000
+ },
+ "model": {
+  "config": {
+   "channels": [
+    16,
+    32
+   ],
+   "hidden": 128,
+   "dropout": 0.2,
+   "num_classes": 10
+  },
+  "parameters": 206970,
+  "layers": [
+   {
+    "layer": "conv1",
+    "type": "Conv2d",
+    "weight shape": [
+     16,
+     1,
+     3,
+     3
+    ],
+    "parameters": 144
+   },
+   {
+    "layer": "bn1",
+    "type": "BatchNorm2d",
+    "weight shape": [
+     16
+    ],
+    "parameters": 32
+   },
+   {
+    "layer": "conv2",
+    "type": "Conv2d",
+    "weight shape": [
+     32,
+     16,
+     3,
+     3
+    ],
+    "parameters": 4608
+   },
+   {
+    "layer": "bn2",
+    "type": "BatchNorm2d",
+    "weight shape": [
+     32
+    ],
+    "parameters": 64
+   },
+   {
+    "layer": "fc1",
+    "type": "Linear",
+    "weight shape": [
+     128,
+     1568
+    ],
+    "parameters": 200832
+   },
+   {
+    "layer": "fc2",
+    "type": "Linear",
+    "weight shape": [
+     10,
+     128
+    ],
+    "parameters": 1290
+   }
+  ]
+ },
+ "training": {
+  "history": [
+   {
+    "epoch": 1,
+    "train_loss": 0.4444237828211351,
+    "train_accuracy": 0.8392181818181819,
+    "val_loss": 0.31914415283203124,
+    "val_accuracy": 0.8816,
+    "seconds": 15.2,
+    "lr": 0.0019238795325112869
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.2974676883350719,
+    "train_accuracy": 0.8912545454545454,
+    "val_loss": 0.2708669906616211,
+    "val_accuracy": 0.9024,
+    "seconds": 17.1,
+    "lr": 0.0017071067811865474
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.25389232781150123,
+    "train_accuracy": 0.9064909090909091,
+    "val_loss": 0.2758575241088867,
+    "val_accuracy": 0.8928,
+    "seconds": 20.4,
+    "lr": 0.00138268343236509
+   },
+   {
+    "epoch": 4,
+    "train_loss": 0.22160046620152213,
+    "train_accuracy": 0.9169454545454545,
+    "val_loss": 0.24995687713623047,
+    "val_accuracy": 0.907,
+    "seconds": 19.8,
+    "lr": 0.001
+   },
+   {
+    "epoch": 5,
+    "train_loss": 0.19272779082818464,
+    "train_accuracy": 0.9293090909090909,
+    "val_loss": 0.2327066665649414,
+    "val_accuracy": 0.9194,
+    "seconds": 16.8,
+    "lr": 0.0006173165676349102
+   },
+   {
+    "epoch": 6,
+    "train_loss": 0.1712428301160986,
+    "train_accuracy": 0.9374363636363636,
+    "val_loss": 0.22393268737792968,
+    "val_accuracy": 0.9186,
+    "seconds": 17.8,
+    "lr": 0.00029289321881345256
+   },
+   {
+    "epoch": 7,
+    "train_loss": 0.1538520922834223,
+    "train_accuracy": 0.9440181818181819,
+    "val_loss": 0.22391371002197266,
+    "val_accuracy": 0.9188,
+    "seconds": 17.0,
+    "lr": 7.612046748871326e-05
+   },
+   {
+    "epoch": 8,
+    "train_loss": 0.14348418034315108,
+    "train_accuracy": 0.9471636363636363,
+    "val_loss": 0.22520685577392577,
+    "val_accuracy": 0.9188,
+    "seconds": 16.9,
+    "lr": 0.0
+   }
+  ],
+  "seconds": 141.2,
+  "epochs": 8
+ },
+ "variants": [
+  {
+   "name": "fp32",
+   "label": "FP32 baseline",
+   "status": "ok",
+   "note": "",
+   "accuracy": 0.919,
+   "test_loss": 0.23030221462249756,
+   "per_class": [
+    {
+     "class": "T-shirt/top",
+     "precision": 0.8628795298726738,
+     "recall": 0.881,
+     "f1": 0.871845620979713,
+     "support": 1000
+    },
+    {
+     "class": "Trouser",
+     "precision": 0.993920972644377,
+     "recall": 0.981,
+     "f1": 0.9874182184197282,
+     "support": 1000
+    },
+    {
+     "class": "Pullover",
+     "precision": 0.8765182186234818,
+     "recall": 0.866,
+     "f1": 0.8712273641851106,
+     "support": 1000
+    },
+    {
+     "class": "Dress",
+     "precision": 0.9132149901380671,
+     "recall": 0.926,
+     "f1": 0.9195630585898709,
+     "support": 1000
+    },
+    {
+     "class": "Coat",
+     "precision": 0.859375,
+     "recall": 0.88,
+     "f1": 0.8695652173913043,
+     "support": 1000
+    },
+    {
+     "class": "Sandal",
+     "precision": 0.986,
+     "recall": 0.986,
+     "f1": 0.986,
+     "support": 1000
+    },
+    {
+     "class": "Shirt",
+     "precision": 0.7769709543568465,
+     "recall": 0.749,
+     "f1": 0.7627291242362525,
+     "support": 1000
+    },
+    {
+     "class": "Sneaker",
+     "precision": 0.9558390578999019,
+     "recall": 0.974,
+     "f1": 0.9648340762753839,
+     "support": 1000
+    },
+    {
+     "class": "Bag",
+     "precision": 0.9849548645937813,
+     "recall": 0.982,
+     "f1": 0.9834752128192289,
+     "support": 1000
+    },
+    {
+     "class": "Ankle boot",
+     "precision": 0.9787018255578094,
+     "recall": 0.965,
+     "f1": 0.9718026183282982,
+     "support": 1000
+    }
+   ],
+   "confusion_matrix": [
+    [
+     881,
+     0,
+     15,
+     16,
+     3,
+     2,
+     78,
+     0,
+     5,
+     0
+    ],
+    [
+     1,
+     981,
+     0,
+     11,
+     4,
+     0,
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     15,
+     1,
+     866,
+     8,
+     48,
+     0,
+     62,
+     0,
+     0,
+     0
+    ],
+    [
+     16,
+     2,
+     9,
+     926,
+     25,
+     0,
+     21,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     45,
+     26,
+     880,
+     0,
+     47,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     986,
+     0,
+     11,
+     0,
+     3
+    ],
+    [
+     103,
+     2,
+     53,
+     24,
+     62,
+     0,
+     749,
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     7,
+     0,
+     974,
+     1,
+     18
+    ],
+    [
+     3,
+     1,
+     0,
+     3,
+     2,
+     2,
+     4,
+     3,
+     982,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     1,
+     31,
+     0,
+     965
+    ]
+   ],
+   "size_bytes": 833587,
+   "eval_seconds": 1.26,
+   "agreement_with_fp32": 1.0,
+   "latency": {
+    "bs1": {
+     "batch_size": 1,
+     "median_ms": 0.5936500383540988,
+     "p90_ms": 0.8843999821692705,
+     "min_ms": 0.3315999638289213,
+     "throughput_ips": 1684.4941217767137,
+     "iters": 500,
+     "rounds": 5,
+     "round_median_range_ms": [
+      0.5489500181283802,
+      0.6269000004976988
+     ],
+     "warmup": 10
+    },
+    "bs64": {
+     "batch_size": 64,
+     "median_ms": 9.456850006245077,
+     "p90_ms": 11.02930004708469,
+     "min_ms": 8.17400001687929,
+     "throughput_ips": 6767.581166851111,
+     "iters": 60,
+     "rounds": 5,
+     "round_median_range_ms": [
+      9.139500034507364,
+      9.933299996191636
+     ],
+     "warmup": 10
+    }
+   },
+   "torchscript_bytes": 853632,
+   "memory": {
+    "idle_mb": 189.2,
+    "after_load_mb": 193.3,
+    "peak_mb": 210.1,
+    "load_growth_mb": 4.04,
+    "peak_growth_mb": 20.85,
+    "batch": 64
+   },
+   "compression": 1.0,
+   "accuracy_drop_pts": 0.0,
+   "speedup_bs1": 1.0,
+   "speedup_bs64": 1.0
+  },
+  {
+   "name": "fp16",
+   "label": "FP16 (CPU)",
+   "status": "ok",
+   "note": "torch.float16 forward pass ran on CPU",
+   "accuracy": 0.9189,
+   "test_loss": 0.2302875518798828,
+   "per_class": [
+    {
+     "class": "T-shirt/top",
+     "precision": 0.8620352250489237,
+     "recall": 0.881,
+     "f1": 0.8714144411473788,
+     "support": 1000
+    },
+    {
+     "class": "Trouser",
+     "precision": 0.993920972644377,
+     "recall": 0.981,
+     "f1": 0.9874182184197282,
+     "support": 1000
+    },
+    {
+     "class": "Pullover",
+     "precision": 0.8765182186234818,
+     "recall": 0.866,
+     "f1": 0.8712273641851106,
+     "support": 1000
+    },
+    {
+     "class": "Dress",
+     "precision": 0.9132149901380671,
+     "recall": 0.926,
+     "f1": 0.9195630585898709,
+     "support": 1000
+    },
+    {
+     "class": "Coat",
+     "precision": 0.859375,
+     "recall": 0.88,
+     "f1": 0.8695652173913043,
+     "support": 1000
+    },
+    {
+     "class": "Sandal",
+     "precision": 0.986,
+     "recall": 0.986,
+     "f1": 0.986,
+     "support": 1000
+    },
+    {
+     "class": "Shirt",
+     "precision": 0.7767393561786086,
+     "recall": 0.748,
+     "f1": 0.7620988283239939,
+     "support": 1000
+    },
+    {
+     "class": "Sneaker",
+     "precision": 0.9558390578999019,
+     "recall": 0.974,
+     "f1": 0.9648340762753839,
+     "support": 1000
+    },
+    {
+     "class": "Bag",
+     "precision": 0.9849548645937813,
+     "recall": 0.982,
+     "f1": 0.9834752128192289,
+     "support": 1000
+    },
+    {
+     "class": "Ankle boot",
+     "precision": 0.9787018255578094,
+     "recall": 0.965,
+     "f1": 0.9718026183282982,
+     "support": 1000
+    }
+   ],
+   "confusion_matrix": [
+    [
+     881,
+     0,
+     15,
+     16,
+     3,
+     2,
+     78,
+     0,
+     5,
+     0
+    ],
+    [
+     1,
+     981,
+     0,
+     11,
+     4,
+     0,
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     15,
+     1,
+     866,
+     8,
+     48,
+     0,
+     62,
+     0,
+     0,
+     0
+    ],
+    [
+     16,
+     2,
+     9,
+     926,
+     25,
+     0,
+     21,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     45,
+     26,
+     880,
+     0,
+     47,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     986,
+     0,
+     11,
+     0,
+     3
+    ],
+    [
+     104,
+     2,
+     53,
+     24,
+     62,
+     0,
+     748,
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     7,
+     0,
+     974,
+     1,
+     18
+    ],
+    [
+     3,
+     1,
+     0,
+     3,
+     2,
+     2,
+     4,
+     3,
+     982,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     1,
+     31,
+     0,
+     965
+    ]
+   ],
+   "size_bytes": 419635,
+   "eval_seconds": 10.74,
+   "agreement_with_fp32": 0.9999,
+   "latency": {
+    "bs1": {
+     "batch_size": 1,
+     "median_ms": 5.593200010480359,
+     "p90_ms": 6.1230999999679625,
+     "min_ms": 2.896799996960908,
+     "throughput_ips": 178.78852859297575,
+     "iters": 500,
+     "rounds": 5,
+     "round_median_range_ms": [
+      5.379499983973801,
+      5.741749977460131
+     ],
+     "warmup": 10
+    },
+    "bs64": {
+     "batch_size": 64,
+     "median_ms": 88.39339998667128,
+     "p90_ms": 92.2236000187695,
+     "min_ms": 81.52680000057444,
+     "throughput_ips": 724.0359575449125,
+     "iters": 60,
+     "rounds": 5,
+     "round_median_range_ms": [
+      85.273149976274,
+      91.22480000951327
+     ],
+     "warmup": 10
+    }
+   },
+   "torchscript_bytes": 441162,
+   "memory": {
+    "idle_mb": 190.3,
+    "after_load_mb": 194.2,
+    "peak_mb": 206.2,
+    "load_growth_mb": 3.91,
+    "peak_growth_mb": 15.88,
+    "batch": 64
+   },
+   "compression": 1.9864572783490415,
+   "accuracy_drop_pts": 0.009999999999998899,
+   "speedup_bs1": 0.10613781685649294,
+   "speedup_bs64": 0.10698592890047291
+  },
+  {
+   "name": "dynamic_int8",
+   "label": "Dynamic INT8",
+   "status": "ok",
+   "note": "int8 weights for Linear layers; convolutions stay fp32 (PyTorch has no dynamic Conv2d)",
+   "accuracy": 0.9193,
+   "test_loss": 0.23056848347187042,
+   "per_class": [
+    {
+     "class": "T-shirt/top",
+     "precision": 0.863147605083089,
+     "recall": 0.883,
+     "f1": 0.8729609490855165,
+     "support": 1000
+    },
+    {
+     "class": "Trouser",
+     "precision": 0.993920972644377,
+     "recall": 0.981,
+     "f1": 0.9874182184197282,
+     "support": 1000
+    },
+    {
+     "class": "Pullover",
+     "precision": 0.874749498997996,
+     "recall": 0.873,
+     "f1": 0.8738738738738739,
+     "support": 1000
+    },
+    {
+     "class": "Dress",
+     "precision": 0.9130434782608695,
+     "recall": 0.924,
+     "f1": 0.9184890656063618,
+     "support": 1000
+    },
+    {
+     "class": "Coat",
+     "precision": 0.8623402163225172,
+     "recall": 0.877,
+     "f1": 0.8696083292017849,
+     "support": 1000
+    },
+    {
+     "class": "Sandal",
+     "precision": 0.987,
+     "recall": 0.987,
+     "f1": 0.987,
+     "support": 1000
+    },
+    {
+     "class": "Shirt",
+     "precision": 0.7775467775467776,
+     "recall": 0.748,
+     "f1": 0.762487257900102,
+     "support": 1000
+    },
+    {
+     "class": "Sneaker",
+     "precision": 0.9558390578999019,
+     "recall": 0.974,
+     "f1": 0.9648340762753839,
+     "support": 1000
+    },
+    {
+     "class": "Bag",
+     "precision": 0.9849548645937813,
+     "recall": 0.982,
+     "f1": 0.9834752128192289,
+     "support": 1000
+    },
+    {
+     "class": "Ankle boot",
+     "precision": 0.9786802030456853,
+     "recall": 0.964,
+     "f1": 0.9712846347607053,
+     "support": 1000
+    }
+   ],
+   "confusion_matrix": [
+    [
+     883,
+     0,
+     15,
+     16,
+     3,
+     1,
+     77,
+     0,
+     5,
+     0
+    ],
+    [
+     1,
+     981,
+     0,
+     11,
+     4,
+     0,
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     15,
+     1,
+     873,
+     7,
+     44,
+     0,
+     60,
+     0,
+     0,
+     0
+    ],
+    [
+     16,
+     2,
+     10,
+     924,
+     25,
+     0,
+     22,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     47,
+     26,
+     877,
+     0,
+     48,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     987,
+     0,
+     10,
+     0,
+     3
+    ],
+    [
+     103,
+     2,
+     53,
+     25,
+     62,
+     0,
+     748,
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     7,
+     0,
+     974,
+     1,
+     18
+    ],
+    [
+     3,
+     1,
+     0,
+     3,
+     2,
+     2,
+     4,
+     3,
+     982,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     1,
+     32,
+     0,
+     964
+    ]
+   ],
+   "size_bytes": 228967,
+   "eval_seconds": 1.28,
+   "agreement_with_fp32": 0.9975,
+   "layers": {
+    "int8": [
+     "fc1 (Linear)",
+     "fc2 (Linear)"
+    ],
+    "float": [
+     "conv1 (Conv2d)",
+     "conv2 (Conv2d)"
+    ]
+   },
+   "latency": {
+    "bs1": {
+     "batch_size": 1,
+     "median_ms": 1.058399968314916,
+     "p90_ms": 1.5457000117748976,
+     "min_ms": 0.6894000107422471,
+     "throughput_ips": 944.8224016787389,
+     "iters": 500,
+     "rounds": 5,
+     "round_median_range_ms": [
+      1.0065500100608915,
+      1.2417999969329685
+     ],
+     "warmup": 10
+    },
+    "bs64": {
+     "batch_size": 64,
+     "median_ms": 9.72444997751154,
+     "p90_ms": 10.861199989449233,
+     "min_ms": 8.54289997369051,
+     "throughput_ips": 6581.349088946357,
+     "iters": 60,
+     "rounds": 5,
+     "round_median_range_ms": [
+      9.337449970189482,
+      10.424000007333234
+     ],
+     "warmup": 10
+    }
+   },
+   "torchscript_bytes": 256200,
+   "memory": {
+    "idle_mb": 188.9,
+    "after_load_mb": 194.8,
+    "peak_mb": 211.2,
+    "load_growth_mb": 5.86,
+    "peak_growth_mb": 22.24,
+    "batch": 64
+   },
+   "compression": 3.6406425380076604,
+   "accuracy_drop_pts": -0.029999999999996696,
+   "speedup_bs1": 0.5608938549943951,
+   "speedup_bs64": 0.9724817370766154
+  },
+  {
+   "name": "static_int8",
+   "label": "Static INT8 (PTQ)",
+   "status": "ok",
+   "note": "histogram observer, per-channel weights, 1024 calibration images",
+   "accuracy": 0.9178,
+   "test_loss": 0.23090827465057373,
+   "per_class": [
+    {
+     "class": "T-shirt/top",
+     "precision": 0.8478468899521531,
+     "recall": 0.886,
+     "f1": 0.8665036674816626,
+     "support": 1000
+    },
+    {
+     "class": "Trouser",
+     "precision": 0.9929221435793731,
+     "recall": 0.982,
+     "f1": 0.987430869783811,
+     "support": 1000
+    },
+    {
+     "class": "Pullover",
+     "precision": 0.8711595639246779,
+     "recall": 0.879,
+     "f1": 0.8750622200099553,
+     "support": 1000
+    },
+    {
+     "class": "Dress",
+     "precision": 0.9096267190569745,
+     "recall": 0.926,
+     "f1": 0.9177403369672944,
+     "support": 1000
+    },
+    {
+     "class": "Coat",
+     "precision": 0.8614931237721022,
+     "recall": 0.877,
+     "f1": 0.869177403369673,
+     "support": 1000
+    },
+    {
+     "class": "Sandal",
+     "precision": 0.9840478564307079,
+     "recall": 0.987,
+     "f1": 0.9855217174238642,
+     "support": 1000
+    },
+    {
+     "class": "Shirt",
+     "precision": 0.7867247007616975,
+     "recall": 0.723,
+     "f1": 0.7535174570088587,
+     "support": 1000
+    },
+    {
+     "class": "Sneaker",
+     "precision": 0.953125,
+     "recall": 0.976,
+     "f1": 0.9644268774703557,
+     "support": 1000
+    },
+    {
+     "class": "Bag",
+     "precision": 0.9849548645937813,
+     "recall": 0.982,
+     "f1": 0.9834752128192289,
+     "support": 1000
+    },
+    {
+     "class": "Ankle boot",
+     "precision": 0.9815950920245399,
+     "recall": 0.96,
+     "f1": 0.9706774519716885,
+     "support": 1000
+    }
+   ],
+   "confusion_matrix": [
+    [
+     886,
+     0,
+     15,
+     16,
+     3,
+     2,
+     73,
+     0,
+     5,
+     0
+    ],
+    [
+     1,
+     982,
+     0,
+     11,
+     3,
+     0,
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     18,
+     1,
+     879,
+     8,
+     41,
+     0,
+     53,
+     0,
+     0,
+     0
+    ],
+    [
+     17,
+     3,
+     9,
+     926,
+     24,
+     0,
+     20,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     50,
+     28,
+     877,
+     0,
+     43,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     987,
+     0,
+     10,
+     0,
+     3
+    ],
+    [
+     118,
+     2,
+     56,
+     26,
+     68,
+     0,
+     723,
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     8,
+     0,
+     976,
+     1,
+     15
+    ],
+    [
+     3,
+     1,
+     0,
+     3,
+     2,
+     2,
+     4,
+     3,
+     982,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     1,
+     35,
+     0,
+     960
+    ]
+   ],
+   "size_bytes": 218709,
+   "eval_seconds": 0.37,
+   "agreement_with_fp32": 0.9923,
+   "config": {
+    "observer": "histogram",
+    "per_channel": true,
+    "calibration_images": 1024,
+    "calibration_batch": 128,
+    "seed": 0
+   },
+   "observers": [
+    {
+     "layer": "quant",
+     "tensor": "output activation",
+     "observer": "HistogramObserver",
+     "min": -0.8101983666419983,
+     "max": 2.022662878036499,
+     "scale": 0.011103834956884384,
+     "zero_point": 73
+    },
+    {
+     "layer": "conv1",
+     "tensor": "output activation",
+     "observer": "HistogramObserver",
+     "min": 0.0,
+     "max": 7.494410037994385,
+     "scale": 0.020879991352558136,
+     "zero_point": 0
+    },
+    {
+     "layer": "conv2",
+     "tensor": "output activation",
+     "observer": "HistogramObserver",
+     "min": 0.0,
+     "max": 10.548542976379395,
+     "scale": 0.029207248240709305,
+     "zero_point": 0
+    },
+    {
+     "layer": "fc1",
+     "tensor": "output activation",
+     "observer": "HistogramObserver",
+     "min": 0.0,
+     "max": 26.281171798706055,
+     "scale": 0.09174053370952606,
+     "zero_point": 0
+    },
+    {
+     "layer": "fc2",
+     "tensor": "output activation",
+     "observer": "HistogramObserver",
+     "min": -26.66761589050293,
+     "max": 23.47929573059082,
+     "scale": 0.19655853509902954,
+     "zero_point": 136
+    },
+    {
+     "layer": "conv1.0",
+     "tensor": "weight (per-channel)",
+     "observer": "PerChannelMinMaxObserver",
+     "min": -1.311606526374817,
+     "max": 1.5069836378097534,
+     "scale": 0.006250319071114063,
+     "zero_point": 0
+    },
+    {
+     "layer": "conv2.0",
+     "tensor": "weight (per-channel)",
+     "observer": "PerChannelMinMaxObserver",
+     "min": -0.6287463307380676,
+     "max": 0.6492955088615417,
+     "scale": 0.0036012791097164154,
+     "zero_point": 0
+    },
+    {
+     "layer": "fc1.0",
+     "tensor": "weight (per-channel)",
+     "observer": "PerChannelMinMaxObserver",
+     "min": -0.43216851353645325,
+     "max": 0.39566174149513245,
+     "scale": 0.0013380172895267606,
+     "zero_point": 0
+    },
+    {
+     "layer": "fc2",
+     "tensor": "weight (per-channel)",
+     "observer": "PerChannelMinMaxObserver",
+     "min": -0.3724994957447052,
+     "max": 0.24978040158748627,
+     "scale": 0.002222252544015646,
+     "zero_point": 0
+    }
+   ],
+   "weight_sqnr": [
+    {
+     "layer": "conv1",
+     "sqnr_db": 47.602291107177734,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "conv2",
+     "sqnr_db": 43.33386993408203,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "fc1",
+     "sqnr_db": 39.83182144165039,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "fc2",
+     "sqnr_db": 42.61867141723633,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    }
+   ],
+   "convert_seconds": 0.84,
+   "latency": {
+    "bs1": {
+     "batch_size": 1,
+     "median_ms": 1.1270999966654927,
+     "p90_ms": 1.6466000233776867,
+     "min_ms": 0.5960999988019466,
+     "throughput_ips": 887.2327237676196,
+     "iters": 500,
+     "rounds": 5,
+     "round_median_range_ms": [
+      1.052250008797273,
+      1.2947000213898718
+     ],
+     "warmup": 10
+    },
+    "bs64": {
+     "batch_size": 64,
+     "median_ms": 3.426649986067787,
+     "p90_ms": 5.556899996008724,
+     "min_ms": 2.7776999631896615,
+     "throughput_ips": 18677.133719584377,
+     "iters": 60,
+     "rounds": 5,
+     "round_median_range_ms": [
+      3.2072499743662775,
+      4.016349994344637
+     ],
+     "warmup": 10
+    }
+   },
+   "torchscript_bytes": 244191,
+   "memory": {
+    "idle_mb": 189.1,
+    "after_load_mb": 197.9,
+    "peak_mb": 206.9,
+    "load_growth_mb": 8.84,
+    "peak_growth_mb": 17.89,
+    "batch": 64
+   },
+   "compression": 3.8113977934149945,
+   "accuracy_drop_pts": 0.12000000000000899,
+   "speedup_bs1": 0.5267057404936589,
+   "speedup_bs64": 2.759794564573307
+  },
+  {
+   "name": "qat_int8",
+   "label": "QAT INT8",
+   "status": "ok",
+   "note": "2 fine-tuning epochs with fake quantization from the fp32 weights",
+   "accuracy": 0.9195,
+   "test_loss": 0.23077139258384705,
+   "per_class": [
+    {
+     "class": "T-shirt/top",
+     "precision": 0.8653658536585366,
+     "recall": 0.887,
+     "f1": 0.8760493827160495,
+     "support": 1000
+    },
+    {
+     "class": "Trouser",
+     "precision": 0.9939271255060729,
+     "recall": 0.982,
+     "f1": 0.9879275653923542,
+     "support": 1000
+    },
+    {
+     "class": "Pullover",
+     "precision": 0.8717693836978131,
+     "recall": 0.877,
+     "f1": 0.8743768693918245,
+     "support": 1000
+    },
+    {
+     "class": "Dress",
+     "precision": 0.9174950298210736,
+     "recall": 0.923,
+     "f1": 0.9202392821535393,
+     "support": 1000
+    },
+    {
+     "class": "Coat",
+     "precision": 0.8599412340842312,
+     "recall": 0.878,
+     "f1": 0.8688767936665017,
+     "support": 1000
+    },
+    {
+     "class": "Sandal",
+     "precision": 0.9840637450199203,
+     "recall": 0.988,
+     "f1": 0.9860279441117764,
+     "support": 1000
+    },
+    {
+     "class": "Shirt",
+     "precision": 0.7837552742616034,
+     "recall": 0.743,
+     "f1": 0.7628336755646818,
+     "support": 1000
+    },
+    {
+     "class": "Sneaker",
+     "precision": 0.9549019607843138,
+     "recall": 0.974,
+     "f1": 0.9643564356435644,
+     "support": 1000
+    },
+    {
+     "class": "Bag",
+     "precision": 0.981018981018981,
+     "recall": 0.982,
+     "f1": 0.9815092453773112,
+     "support": 1000
+    },
+    {
+     "class": "Ankle boot",
+     "precision": 0.9796126401630989,
+     "recall": 0.961,
+     "f1": 0.9702170620898537,
+     "support": 1000
+    }
+   ],
+   "confusion_matrix": [
+    [
+     887,
+     0,
+     14,
+     12,
+     3,
+     2,
+     77,
+     0,
+     5,
+     0
+    ],
+    [
+     1,
+     982,
+     0,
+     9,
+     4,
+     0,
+     2,
+     0,
+     2,
+     0
+    ],
+    [
+     15,
+     1,
+     877,
+     7,
+     43,
+     0,
+     56,
+     0,
+     1,
+     0
+    ],
+    [
+     16,
+     2,
+     11,
+     923,
+     26,
+     0,
+     19,
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     0,
+     49,
+     27,
+     878,
+     0,
+     46,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     988,
+     0,
+     9,
+     0,
+     3
+    ],
+    [
+     103,
+     2,
+     55,
+     25,
+     65,
+     0,
+     743,
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     8,
+     0,
+     974,
+     1,
+     17
+    ],
+    [
+     3,
+     1,
+     0,
+     3,
+     2,
+     2,
+     4,
+     3,
+     982,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     1,
+     34,
+     0,
+     961
+    ]
+   ],
+   "size_bytes": 218709,
+   "eval_seconds": 0.42,
+   "agreement_with_fp32": 0.991,
+   "config": {
+    "epochs": 2,
+    "lr": 0.0002,
+    "batch_size": 128,
+    "freeze_bn_epoch": 2,
+    "freeze_observer_epoch": 2,
+    "seed": 0
+   },
+   "history": [
+    {
+     "epoch": 1,
+     "train_loss": 0.14820241678086193,
+     "train_accuracy": 0.9454363636363636,
+     "val_loss": 0.226948583984375,
+     "val_accuracy": 0.9188,
+     "seconds": 30.9,
+     "lr": 0.0001
+    },
+    {
+     "epoch": 2,
+     "train_loss": 0.13888796788345684,
+     "train_accuracy": 0.9489818181818181,
+     "val_loss": 0.22737837982177733,
+     "val_accuracy": 0.9202,
+     "seconds": 30.1,
+     "lr": 0.0
+    }
+   ],
+   "weight_sqnr": [
+    {
+     "layer": "conv1",
+     "sqnr_db": 37.789058685302734,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "conv2",
+     "sqnr_db": 30.704992294311523,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "fc1",
+     "sqnr_db": 27.855323791503906,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    },
+    {
+     "layer": "fc2",
+     "sqnr_db": 25.23097801208496,
+     "scheme": "per_channel_affine",
+     "dtype": "qint8"
+    }
+   ],
+   "train_seconds": 61.6,
+   "latency": {
+    "bs1": {
+     "batch_size": 1,
+     "median_ms": 1.0720500140450895,
+     "p90_ms": 1.3834999990649521,
+     "min_ms": 0.5847999709658325,
+     "throughput_ips": 932.792301570681,
+     "iters": 500,
+     "rounds": 5,
+     "round_median_range_ms": [
+      0.971500005107373,
+      1.1350499698892236
+     ],
+     "warmup": 10
+    },
+    "bs64": {
+     "batch_size": 64,
+     "median_ms": 3.237149998312816,
+     "p90_ms": 3.9213999989442527,
+     "min_ms": 2.5954999728128314,
+     "throughput_ips": 19770.477127521564,
+     "iters": 60,
+     "rounds": 5,
+     "round_median_range_ms": [
+      3.0217999883461744,
+      3.618049988290295
+     ],
+     "warmup": 10
+    }
+   },
+   "torchscript_bytes": 245868,
+   "memory": {
+    "idle_mb": 189.4,
+    "after_load_mb": 197.3,
+    "peak_mb": 206.4,
+    "load_growth_mb": 7.86,
+    "peak_growth_mb": 16.93,
+    "batch": 64
+   },
+   "compression": 3.8113977934149945,
+   "accuracy_drop_pts": -0.04999999999999449,
+   "speedup_bs1": 0.5537521856038429,
+   "speedup_bs64": 2.9213505741698507
+  }
+ ],
+ "static_ablation": [
+  {
+   "observer": "minmax",
+   "per_channel": false,
+   "calibration_images": 32,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9188
+  },
+  {
+   "observer": "minmax",
+   "per_channel": false,
+   "calibration_images": 256,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9182
+  },
+  {
+   "observer": "minmax",
+   "per_channel": false,
+   "calibration_images": 2048,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9188
+  },
+  {
+   "observer": "minmax",
+   "per_channel": true,
+   "calibration_images": 32,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9181
+  },
+  {
+   "observer": "minmax",
+   "per_channel": true,
+   "calibration_images": 256,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9181
+  },
+  {
+   "observer": "minmax",
+   "per_channel": true,
+   "calibration_images": 2048,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9183
+  },
+  {
+   "observer": "histogram",
+   "per_channel": false,
+   "calibration_images": 32,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9191
+  },
+  {
+   "observer": "histogram",
+   "per_channel": false,
+   "calibration_images": 256,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9182
+  },
+  {
+   "observer": "histogram",
+   "per_channel": false,
+   "calibration_images": 2048,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9193
+  },
+  {
+   "observer": "histogram",
+   "per_channel": true,
+   "calibration_images": 32,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9191
+  },
+  {
+   "observer": "histogram",
+   "per_channel": true,
+   "calibration_images": 256,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9186
+  },
+  {
+   "observer": "histogram",
+   "per_channel": true,
+   "calibration_images": 2048,
+   "calibration_batch": 128,
+   "seed": 0,
+   "accuracy": 0.9185
+  }
+ ],
+ "exports": {
+  "fp32": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/fp32.ts",
+    "bytes": 853632,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/fp32.onnx",
+    "bytes": 829257,
+    "max_abs_diff": 9.5367431640625e-06,
+    "prediction_agreement": 1.0,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "ok": true
+   }
+  ],
+  "fp16": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/fp16.ts",
+    "bytes": 441162,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   }
+  ],
+  "dynamic_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/dynamic_int8.ts",
+    "bytes": 256200,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   }
+  ],
+  "static_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/static_int8.ts",
+    "bytes": 244191,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/static_int8.onnx",
+    "bytes": 220101,
+    "max_abs_diff": 0.19655990600585938,
+    "prediction_agreement": 0.9994999766349792,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "output_step": 0.19655853509902954,
+    "max_diff_in_steps": 1.0000069745474505,
+    "ok": true
+   }
+  ],
+  "qat_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/qat_int8.ts",
+    "bytes": 245868,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/qat_int8.onnx",
+    "bytes": 220101,
+    "max_abs_diff": 0.1943035125732422,
+    "prediction_agreement": 0.9991999864578247,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "output_step": 0.1943025290966034,
+    "max_diff_in_steps": 1.0000050615740483,
+    "ok": true
+   }
+  ]
+ },
+ "total_seconds": 266.8
+}

@@ -1,0 +1,247 @@
+I love machine learning.
+I love Python because it is simple and readable.
+I love natural language processing.
+I love reading books on rainy afternoons.
+I love learning new things every day.
+I love working on small projects with my friends.
+I love the quiet of the library in the evening.
+She loves machine learning and statistics.
+She loves to read poetry before she sleeps.
+He loves cooking pasta for his family on Sundays.
+He loves to play football in the park.
+They love to travel to new cities in the summer.
+They love the music of the old jazz bands.
+Machine learning is a branch of artificial intelligence.
+Machine learning needs clean data and careful evaluation.
+Machine learning is not magic, it is mostly statistics.
+Machine translation turns text in one language into another language.
+Machine translation has improved a lot in recent years.
+Machine vision helps robots see the world around them.
+Deep learning is a kind of machine learning that uses neural networks.
+Natural language processing is one of my favourite subjects.
+A language model assigns a probability to a sequence of words.
+A language model predicts the next word in a sentence.
+A language model can also generate new text one word at a time.
+A good language model gives high probability to real sentences.
+The next word depends on the words that came before it.
+The next word is hard to guess when the context is rare.
+An n-gram model looks only at the last few words.
+A unigram model ignores the context and counts single words.
+The model counts how often each word follows each context.
+The model divides each count by the total count of the context.
+The model uses these counts to estimate probabilities.
+The model has never seen most possible sentences.
+The model cannot understand meaning, it only counts words.
+Counting words is the first step in building a language model.
+Counting triples of words gives us a trigram model.
+Probability is a number between zero and one.
+Probabilities of all possible next words must add up to one.
+Conditional probability is the probability of an event given another event.
+Maximum likelihood estimation chooses the parameters that make the data most likely.
+Maximum likelihood estimation gives zero probability to unseen events.
+Smoothing moves a little probability to events we have not seen.
+Laplace smoothing adds one to every count.
+Add k smoothing adds a small number to every count.
+Perplexity measures how surprised a model is by new text.
+Cross entropy is the average negative log probability of the test words.
+Cross entropy and perplexity are measured on held out data.
+A model should never be evaluated on its own training data.
+The training data teaches the model and the test data checks it.
+The test data must stay separate from the training data.
+Data scientists spend most of their time cleaning data.
+Data is the fuel of every machine learning system.
+Data can be messy, noisy and incomplete.
+Good data is more valuable than a clever algorithm.
+Big data is not always better data.
+Python is a popular programming language for data science.
+Python is easy to learn and fun to use.
+Programming takes practice, patience and curiosity.
+Every programmer makes mistakes and learns from them.
+A good programmer writes code that other people can read.
+Writing tests helps us find bugs before our users do.
+Writing clean code is a habit that takes time to build.
+I am learning Python this year.
+I am learning how language models work.
+I am learning to cook new recipes at home.
+I am learning to play the guitar in the evenings.
+I am reading a book about the history of computers.
+I am reading a book about machine learning.
+I am going to the library after lunch.
+I am going to visit my grandmother next weekend.
+I want to build a model that predicts the next word.
+I want to travel around the world one day.
+I want to read more books this year.
+I think the model needs more data.
+I think the weather will be better tomorrow.
+I think this is the best coffee in the city.
+I think learning is a lifelong journey.
+I would like a cup of tea, please.
+I would like to know how this model works.
+Can you pass me the salt, please?
+Do you want to go for a walk?
+How do we measure the quality of a model?
+What is the next word in this sentence?
+What time is the meeting tomorrow?
+What did you have for breakfast?
+Where are you going this weekend?
+Thank you for your help.
+Thank you for reading this sentence.
+Good night and sleep well.
+Have a nice day at work.
+The weather is lovely today.
+The weather is cold and windy this morning.
+The weather was hot and sunny all week.
+The weather will change in the afternoon.
+It is raining again in the city.
+It is too early to tell if the plan will work.
+It is important to drink water every day.
+It was a long day at work.
+It was the best holiday of my life.
+The sun is shining over the hills.
+The rain stopped and the sky turned blue.
+The wind is blowing through the trees.
+The children are playing in the garden.
+The children are learning to read at school.
+The teacher explained the lesson with simple examples.
+The teacher asked the students to read the first chapter.
+The students worked together on a small project.
+The students asked many good questions in class.
+The library has thousands of books about science.
+The book on the table is about the history of language.
+The book was so good that I read it twice.
+The story ends with a happy surprise.
+The old man told stories about the sea.
+The young girl wrote a poem about the moon.
+The cat jumped onto the kitchen table.
+The dog is waiting for his walk.
+The dog ran across the field to catch the ball.
+The birds are singing in the morning.
+The kitchen smells of fresh bread.
+The soup is hot, so eat it slowly.
+The coffee is ready in the kitchen.
+The train leaves the station at eight.
+The bus stops in front of the school.
+The city is busy and noisy at night.
+The city has a beautiful old market.
+The market sells fresh fruit and vegetables.
+The restaurant serves the best pasta in town.
+The meeting starts at ten in the morning.
+The meeting was long but useful.
+The project is almost finished.
+The project needs more time and more data.
+The results of the experiment were surprising.
+The results show that the trigram model is better.
+The computer is running a long experiment.
+The program reads the text and counts the words.
+The program prints the most likely next word.
+The algorithm is simple but surprisingly effective.
+The algorithm learns from examples.
+The idea is simple, but the details are hard.
+Most words in a large corpus are rare.
+Most of the probability mass goes to a few common words.
+Rare words make language modeling difficult.
+Unknown words are replaced by a special token.
+Every sentence starts with a start token and ends with an end token.
+A larger corpus usually gives a better model.
+A small corpus leads to many unseen word pairs.
+Language is full of patterns and surprises.
+Language changes slowly over time.
+Some words are much more common than others.
+Context helps us guess what comes next.
+Context is everything in language.
+We use statistics to learn from language.
+We use probability to describe uncertainty.
+We use smoothing so the model is never completely surprised.
+We use a test set to measure how well the model generalizes.
+We need more data to train a better model.
+We need to clean the text before we count the words.
+We need to be careful when we evaluate a model.
+We had dinner at a small restaurant by the river.
+We are learning about language models in this course.
+My favourite food is pasta with tomato sauce.
+My favourite book is about a boy who learns to sail.
+My brother is learning to drive.
+My sister loves to paint in the garden.
+My friend is a data scientist at a small company.
+My friend sent me a long letter from abroad.
+My computer is old but it still works well.
+My phone is on the kitchen table.
+Our team is working on a new project.
+Our teacher loves mathematics and music.
+Our house is close to the river.
+Your code looks clean and easy to read.
+This model predicts the next word using counts.
+This sentence is short.
+This book is about the history of science.
+This city is famous for its bridges.
+This is the best day of the week.
+That was a very good question.
+That restaurant is always full on Fridays.
+There is a small cafe near the station.
+There is no such thing as a perfect model.
+There are many ways to solve this problem.
+There are more stars in the sky than grains of sand on the beach.
+People learn languages by listening and speaking.
+People often say that practice makes perfect.
+People love stories about heroes and journeys.
+Computers are good at counting but bad at understanding.
+Computers can process millions of words in a second.
+Statistics helps us find patterns in noisy data.
+Science moves forward one experiment at a time.
+Learning a new skill takes time and practice.
+Learning from mistakes is part of the process.
+Reading every day makes you a better writer.
+Writing every day makes you a better thinker.
+Coffee in the morning and tea in the afternoon.
+Fresh bread is the best part of the morning.
+Breakfast is the most important meal of the day.
+Dinner is ready, please come to the table.
+Please close the door when you leave.
+Please read the instructions before you start.
+Please send me the report by Friday.
+Let me know if you have any questions.
+Let us start with a simple example.
+Let us count the words in this sentence.
+Let us compare the bigram and trigram models.
+Simple models are easy to understand.
+Simple ideas often work surprisingly well.
+Neural networks can learn much longer contexts than n-gram models.
+Neural language models replaced n-gram models in many applications.
+Neural networks need a lot of data and computing power.
+N-gram models are still useful for teaching and for small devices.
+N-gram models are fast to train and easy to inspect.
+N-gram models suffer from data sparsity.
+The longer the context, the rarer each n-gram becomes.
+A trigram model needs much more data than a bigram model.
+A bigram model is less sparse than a trigram model.
+Backoff uses a shorter context when a longer context was never seen.
+Temperature makes the sampling more or less random.
+A low temperature makes the model choose common words.
+A high temperature makes the output more surprising.
+Generated text from a trigram model sounds a little more natural.
+The best way to learn is to build something yourself.
+The best time to plant a tree was twenty years ago.
+The best part of the trip was the food.
+The first step is always the hardest.
+The first chapter of the book is about counting.
+The last train leaves at midnight.
+The last time I saw him he was very happy.
+Yesterday it rained all day.
+Every morning I drink a cup of coffee.
+Every evening I read a few pages of a book.
+Every weekend we visit the market.
+On rainy days I stay at home and read.
+In the winter we sit by the fire.
+After dinner we went for a walk by the river.
+After the meeting we went for coffee.
+Before you train a model, look at your data.
+Before you leave, please turn off the lights.
+When the context is unseen, the model backs off to a shorter context.
+When it rains, the streets become very quiet.
+If you want to learn, you have to practice.
+If the model has never seen a word, it treats it as unknown.
+If the test sentence contains an unseen pair, the unsmoothed model assigns zero probability.
+Words, sentences and stories are made of patterns.
+Patterns in language can be counted and measured.
+Measuring a model honestly is harder than building it.
+Building a model from scratch teaches you how it really works.

@@ -1,0 +1,205 @@
+[
+ {
+  "name": "lora-r8-c_attn",
+  "mode": "lora",
+  "rank": 8,
+  "alpha": 16,
+  "targets": [
+   "c_attn"
+  ],
+  "lr": 0.0005,
+  "epochs": 2,
+  "n_train": 4000,
+  "trainable_params": 296448,
+  "trainable_percent": 0.23765985087767907,
+  "best_dev_acc": 0.876,
+  "best_step": 500,
+  "test_acc": 0.8600917431192661,
+  "train_time_s": 476,
+  "peak_rss_mb": 1591,
+  "adapter_bytes": 595528,
+  "model_storage_mb": 475.8,
+  "history": [
+   {
+    "step": 125,
+    "loss": 0.2613,
+    "dev_acc": 0.86
+   },
+   {
+    "step": 250,
+    "loss": 0.543,
+    "dev_acc": 0.852
+   },
+   {
+    "step": 375,
+    "loss": 0.028,
+    "dev_acc": 0.87
+   },
+   {
+    "step": 500,
+    "loss": 0.3003,
+    "dev_acc": 0.876
+   }
+  ]
+ },
+ {
+  "name": "head",
+  "mode": "head",
+  "rank": null,
+  "alpha": null,
+  "targets": null,
+  "lr": 0.002,
+  "epochs": 2,
+  "n_train": 4000,
+  "trainable_params": 1536,
+  "trainable_percent": 0.00123431646639882,
+  "best_dev_acc": 0.82,
+  "best_step": 375,
+  "test_acc": 0.819954128440367,
+  "train_time_s": 265,
+  "peak_rss_mb": 1101,
+  "adapter_bytes": 6368,
+  "model_storage_mb": 474.7,
+  "history": [
+   {
+    "step": 125,
+    "loss": 0.7637,
+    "dev_acc": 0.564
+   },
+   {
+    "step": 250,
+    "loss": 0.6853,
+    "dev_acc": 0.714
+   },
+   {
+    "step": 375,
+    "loss": 0.3132,
+    "dev_acc": 0.82
+   },
+   {
+    "step": 500,
+    "loss": 0.3354,
+    "dev_acc": 0.81
+   }
+  ]
+ },
+ {
+  "name": "lora-r1-c_attn",
+  "mode": "lora",
+  "rank": 1,
+  "alpha": 16,
+  "targets": [
+   "c_attn"
+  ],
+  "lr": 0.0005,
+  "epochs": 2,
+  "n_train": 4000,
+  "trainable_params": 38400,
+  "trainable_percent": 0.03084877314429205,
+  "best_dev_acc": 0.884,
+  "best_step": 500,
+  "test_acc": 0.8795871559633027,
+  "train_time_s": 491,
+  "peak_rss_mb": 1371,
+  "adapter_bytes": 79384,
+  "model_storage_mb": 474.8,
+  "history": [
+   {
+    "step": 125,
+    "loss": 0.4032,
+    "dev_acc": 0.85
+   },
+   {
+    "step": 250,
+    "loss": 0.5991,
+    "dev_acc": 0.866
+   },
+   {
+    "step": 375,
+    "loss": 0.0851,
+    "dev_acc": 0.862
+   },
+   {
+    "step": 500,
+    "loss": 0.2582,
+    "dev_acc": 0.884
+   }
+  ]
+ },
+ {
+  "name": "lora-r8-c_attn-n1000",
+  "mode": "lora",
+  "rank": 8,
+  "alpha": 16,
+  "targets": [
+   "c_attn"
+  ],
+  "lr": 0.0005,
+  "epochs": 2,
+  "n_train": 1000,
+  "trainable_params": 296448,
+  "trainable_percent": 0.23765985087767907,
+  "best_dev_acc": 0.8,
+  "best_step": 125,
+  "test_acc": 0.8165137614678899,
+  "train_time_s": 176,
+  "peak_rss_mb": 1508,
+  "adapter_bytes": 595528,
+  "model_storage_mb": 475.8,
+  "history": [
+   {
+    "step": 125,
+    "loss": 0.4855,
+    "dev_acc": 0.8
+   },
+   {
+    "step": 126,
+    "loss": 0.4772,
+    "dev_acc": 0.8
+   }
+  ]
+ },
+ {
+  "name": "qlora-r8-c_attn",
+  "mode": "qlora",
+  "rank": 8,
+  "alpha": 16,
+  "targets": [
+   "c_attn"
+  ],
+  "lr": 0.0005,
+  "epochs": 2,
+  "n_train": 4000,
+  "trainable_params": 296448,
+  "trainable_percent": 0.7463696656805305,
+  "best_dev_acc": 0.88,
+  "best_step": 250,
+  "test_acc": 0.8669724770642202,
+  "train_time_s": 876,
+  "peak_rss_mb": 1203,
+  "adapter_bytes": 595528,
+  "model_storage_mb": 193.6,
+  "history": [
+   {
+    "step": 125,
+    "loss": 0.3654,
+    "dev_acc": 0.862
+   },
+   {
+    "step": 250,
+    "loss": 0.4845,
+    "dev_acc": 0.88
+   },
+   {
+    "step": 375,
+    "loss": 0.0496,
+    "dev_acc": 0.862
+   },
+   {
+    "step": 500,
+    "loss": 0.3191,
+    "dev_acc": 0.88
+   }
+  ]
+ }
+]

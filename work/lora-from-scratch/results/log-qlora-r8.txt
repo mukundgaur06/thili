@@ -1,0 +1,7 @@
+[qlora-r8-c_attn] trainable 296,448 / 39,718,656 = 0.746% | LoRA on 12 layers
+dev accuracy before training (random head): 0.580
+step  125/500 | loss 0.3654 | dev 0.862 |   229s | rss 1203 MB
+step  250/500 | loss 0.4845 | dev 0.880 |   436s | rss 1203 MB
+step  375/500 | loss 0.0496 | dev 0.862 |   668s | rss 1203 MB
+step  500/500 | loss 0.3191 | dev 0.880 |   876s | rss 1203 MB
+[qlora-r8-c_attn] best dev 0.880 at step 250 | TEST accuracy 0.8670 | 876s | peak RSS 1203 MB | adapter 582 KB

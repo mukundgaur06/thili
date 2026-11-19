@@ -1,0 +1,25 @@
+{
+ "run": "abl-frozen",
+ "config": {
+  "ordering": "frozen",
+  "steps": 250,
+  "batch_size": 32,
+  "lr": 0.001,
+  "warmup": 30,
+  "weight_decay": 0.0,
+  "eval_every": 50,
+  "n_val": 512,
+  "seed": 0,
+  "threads": 8,
+  "train_subset": 4000
+ },
+ "done": true,
+ "step": 250,
+ "params": {
+  "total": 87939840,
+  "trainable": 2098944,
+  "percent": 2.38679533644819
+ },
+ "n_train_baskets": 4000,
+ "machine": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+}

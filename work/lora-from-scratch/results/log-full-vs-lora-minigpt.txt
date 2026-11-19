@@ -1,0 +1,16 @@
+examples: 3000 train / 1000 dev / 875 test, 0.51 positive
+head  r= - seed 0: trainable     256 (  0.03%) | dev 0.787 | test 0.797 | 60.4s
+head  r= - seed 1: trainable     256 (  0.03%) | dev 0.768 | test 0.728 | 52.5s
+head  r= - seed 2: trainable     256 (  0.03%) | dev 0.780 | test 0.785 | 52.5s
+lora  r= 1 seed 0: trainable   2,304 (  0.27%) | dev 1.000 | test 1.000 | 104.2s
+lora  r= 1 seed 1: trainable   2,304 (  0.27%) | dev 1.000 | test 1.000 | 94.5s
+lora  r= 1 seed 2: trainable   2,304 (  0.27%) | dev 1.000 | test 0.999 | 105.5s
+lora  r= 4 seed 0: trainable   8,448 (  0.96%) | dev 1.000 | test 1.000 | 116.0s
+lora  r= 4 seed 1: trainable   8,448 (  0.96%) | dev 1.000 | test 1.000 | 92.1s
+lora  r= 4 seed 2: trainable   8,448 (  0.96%) | dev 1.000 | test 1.000 | 88.1s
+lora  r= 8 seed 0: trainable  16,640 (  1.88%) | dev 1.000 | test 1.000 | 94.0s
+lora  r= 8 seed 1: trainable  16,640 (  1.88%) | dev 1.000 | test 0.999 | 98.0s
+lora  r= 8 seed 2: trainable  16,640 (  1.88%) | dev 1.000 | test 1.000 | 87.7s
+full  r= - seed 0: trainable 867,328 (100.00%) | dev 1.000 | test 1.000 | 114.0s
+full  r= - seed 1: trainable 867,328 (100.00%) | dev 1.000 | test 1.000 | 115.9s
+full  r= - seed 2: trainable 867,328 (100.00%) | dev 1.000 | test 1.000 | 110.7s

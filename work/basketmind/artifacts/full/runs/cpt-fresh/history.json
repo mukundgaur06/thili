@@ -1,0 +1,111 @@
+[
+ {
+  "step": 0,
+  "train_loss": null,
+  "val_loss_random": 7.219679968194027,
+  "val_loss_fixed": 7.201526014289222,
+  "seconds": 0.0,
+  "presented": 0,
+  "epoch": 0
+ },
+ {
+  "step": 50,
+  "train_loss": 6.156521282196045,
+  "val_loss_random": 5.920672009480418,
+  "val_loss_fixed": 5.923132820622978,
+  "seconds": 319.1,
+  "presented": 3200,
+  "epoch": 0.04,
+  "lr": 0.0009963758185095933
+ },
+ {
+  "step": 100,
+  "train_loss": 5.9177327060699465,
+  "val_loss_random": 5.9170105770202746,
+  "val_loss_fixed": 5.922656385382972,
+  "seconds": 601.1,
+  "presented": 6400,
+  "epoch": 0.08,
+  "lr": 0.0009529810906477794
+ },
+ {
+  "step": 150,
+  "train_loss": 5.87958642414638,
+  "val_loss_random": 5.879426346248267,
+  "val_loss_fixed": 5.8738670701680915,
+  "seconds": 666.9,
+  "presented": 9600,
+  "epoch": 0.12,
+  "lr": 0.0008649917431652191
+ },
+ {
+  "step": 200,
+  "train_loss": 5.852372798919678,
+  "val_loss_random": 5.829287037170749,
+  "val_loss_fixed": 5.817091062196742,
+  "seconds": 937.1,
+  "presented": 12800,
+  "epoch": 0.16,
+  "lr": 0.0007421448371119853
+ },
+ {
+  "step": 250,
+  "train_loss": 5.8059147000312805,
+  "val_loss_random": 5.807615608032001,
+  "val_loss_fixed": 5.808153529704829,
+  "seconds": 998.9,
+  "presented": 16000,
+  "epoch": 0.2,
+  "lr": 0.0005980348342982424
+ },
+ {
+  "step": 300,
+  "train_loss": 5.783655652999878,
+  "val_loss_random": 5.779474790788182,
+  "val_loss_fixed": 5.780044189001848,
+  "seconds": 1251.0,
+  "presented": 19200,
+  "epoch": 0.24,
+  "lr": 0.00044860920945212956
+ },
+ {
+  "step": 350,
+  "train_loss": 5.732441782951355,
+  "val_loss_random": 5.765471904423232,
+  "val_loss_fixed": 5.76279030621823,
+  "seconds": 1296.5,
+  "presented": 22400,
+  "epoch": 0.28,
+  "lr": 0.00031040367369322675
+ },
+ {
+  "step": 400,
+  "train_loss": 5.764110679626465,
+  "val_loss_random": 5.750230263870437,
+  "val_loss_fixed": 5.740853526455638,
+  "seconds": 1538.3,
+  "presented": 25600,
+  "epoch": 0.32,
+  "lr": 0.0001987123026982423
+ },
+ {
+  "step": 450,
+  "train_loss": 5.736779270172119,
+  "val_loss_random": 5.7389752005473085,
+  "val_loss_fixed": 5.734032255444201,
+  "seconds": 1775.5,
+  "presented": 28800,
+  "epoch": 0.36,
+  "lr": 0.00012589506650059542
+ },
+ {
+  "step": 500,
+  "train_loss": 5.718181114196778,
+  "val_loss_random": 5.727705245097331,
+  "val_loss_fixed": 5.721833008715053,
+  "seconds": 2016.2,
+  "presented": 32000,
+  "epoch": 0.4,
+  "lr": 0.00010001005275111894
+ }
+]

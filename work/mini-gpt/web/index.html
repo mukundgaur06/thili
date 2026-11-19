@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mini-GPT Playground</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">◆</span> mini-GPT <small>a transformer you can see inside</small></div>
+  <nav id="nav">
+    <a href="#generate" data-page="generate">Generate</a>
+    <a href="#next" data-page="next">Next token</a>
+    <a href="#attention" data-page="attention">Attention</a>
+    <a href="#tokenizer" data-page="tokenizer">Tokenizer</a>
+    <a href="#training" data-page="training">Training</a>
+    <a href="#architecture" data-page="architecture">Architecture</a>
+  </nav>
+  <div id="modelchip" class="chip">loading…</div>
+</header>
+<main id="page"></main>
+<div id="toast" class="toast" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>

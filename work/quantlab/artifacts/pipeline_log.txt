@@ -1,0 +1,37 @@
+fashion_mnist: 55000 train / 5000 val / 10000 test | engine onednn
+  epoch 1: train loss 0.4444  val loss 0.3191  val acc 0.8816  (15.2s)
+  epoch 2: train loss 0.2975  val loss 0.2709  val acc 0.9024  (17.1s)
+  epoch 3: train loss 0.2539  val loss 0.2759  val acc 0.8928  (20.4s)
+  epoch 4: train loss 0.2216  val loss 0.2500  val acc 0.9070  (19.8s)
+  epoch 5: train loss 0.1927  val loss 0.2327  val acc 0.9194  (16.8s)
+  epoch 6: train loss 0.1712  val loss 0.2239  val acc 0.9186  (17.8s)
+  epoch 7: train loss 0.1539  val loss 0.2239  val acc 0.9188  (17.0s)
+  epoch 8: train loss 0.1435  val loss 0.2252  val acc 0.9188  (16.9s)
+evaluating and benchmarking
+  FP32 baseline          acc 0.9190  size   814.0 KB
+  FP16 (CPU)             acc 0.9189  size   409.8 KB
+  Dynamic INT8           acc 0.9193  size   223.6 KB
+  Static INT8 (PTQ)      acc 0.9178  size   213.6 KB
+  QAT epoch 1: val acc 0.9188
+  QAT epoch 2: val acc 0.9202
+  QAT INT8               acc 0.9195  size   213.6 KB
+timing all variants, interleaved (5 rounds)
+  FP32 baseline          bs1 0.594 ms  bs64 9.46 ms  (round medians 9.14 to 9.93)
+  FP16 (CPU)             bs1 5.593 ms  bs64 88.39 ms  (round medians 85.27 to 91.22)
+  Dynamic INT8           bs1 1.058 ms  bs64 9.72 ms  (round medians 9.34 to 10.42)
+  Static INT8 (PTQ)      bs1 1.127 ms  bs64 3.43 ms  (round medians 3.21 to 4.02)
+  QAT INT8               bs1 1.072 ms  bs64 3.24 ms  (round medians 3.02 to 3.62)
+exporting and measuring memory in fresh processes
+  ablation minmax    per_channel=False n=  32: 0.9188
+  ablation minmax    per_channel=False n= 256: 0.9182
+  ablation minmax    per_channel=False n=2048: 0.9188
+  ablation minmax    per_channel=True  n=  32: 0.9181
+  ablation minmax    per_channel=True  n= 256: 0.9181
+  ablation minmax    per_channel=True  n=2048: 0.9183
+  ablation histogram per_channel=False n=  32: 0.9191
+  ablation histogram per_channel=False n= 256: 0.9182
+  ablation histogram per_channel=False n=2048: 0.9193
+  ablation histogram per_channel=True  n=  32: 0.9191
+  ablation histogram per_channel=True  n= 256: 0.9186
+  ablation histogram per_channel=True  n=2048: 0.9185
+wrote artifacts/results.json in 266.8s

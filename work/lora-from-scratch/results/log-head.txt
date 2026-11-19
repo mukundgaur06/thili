@@ -1,0 +1,7 @@
+[head] trainable 1,536 / 124,441,344 = 0.001%
+dev accuracy before training (random head): 0.580
+step  125/500 | loss 0.7637 | dev 0.564 |    64s | rss 1101 MB
+step  250/500 | loss 0.6853 | dev 0.714 |   130s | rss 1101 MB
+step  375/500 | loss 0.3132 | dev 0.820 |   197s | rss 1101 MB
+step  500/500 | loss 0.3354 | dev 0.810 |   265s | rss 1101 MB
+[head] best dev 0.820 at step 375 | TEST accuracy 0.8200 | 265s | peak RSS 1101 MB | adapter 6 KB

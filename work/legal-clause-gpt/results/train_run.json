@@ -1,0 +1,18 @@
+{
+ "n_train": 4000,
+ "n_dev": 400,
+ "epochs": 1.0,
+ "batch": 8,
+ "lr": 0.0001,
+ "max_clause_tokens": 64,
+ "loss_on_prompt": false,
+ "threads": 12,
+ "seed": 0,
+ "out": "outputs/clause-gpt2",
+ "max_minutes": 8.6,
+ "fresh": false,
+ "train_minutes": 39.1,
+ "steps": 500,
+ "best_eval_loss": 0.5630061626434326,
+ "best_checkpoint": "outputs/trainer/checkpoint-500"
+}

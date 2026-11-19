@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basketmind"
+version = "0.1.0"
+description = "Can a small pretrained language model learn what sells together? Planted baskets, an exact bitset Apriori miner, classical recommenders, continued pretraining of GPT-2, and bootstrapped evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=1.5"]
+
+[project.optional-dependencies]
+train = ["torch>=2.1", "transformers>=4.40"]
+app = ["streamlit>=1.30", "plotly>=5"]
+
+[tool.setuptools.packages.find]
+include = ["basketmind*"]

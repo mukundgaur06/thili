@@ -1,0 +1,62 @@
+I love machine learning because it turns data into decisions.
+I love the smell of fresh coffee in the morning.
+I love machine translation because it connects people.
+We love building tools that help people learn.
+We love long walks by the river after dinner.
+Machine learning models learn patterns from data.
+Natural language processing teaches computers to work with human language.
+A bad language model is surprised by ordinary sentences.
+The next word is easy to guess when the context is common.
+A bigram model looks at the previous word.
+A trigram model looks at the previous two words.
+Counting pairs of words gives us a bigram model.
+Probability tells us how likely an event is.
+Smoothing helps the model handle new word combinations.
+Perplexity is lower when the model predicts the test data well.
+Python has many libraries for machine learning.
+Python code should be clear, simple and well tested.
+Programming is the art of telling a computer what to do.
+I am going to the market this morning.
+I want to learn machine learning from scratch.
+Can you tell me how the model makes predictions?
+Can you help me with my homework?
+Do you know where the station is?
+Do you like machine learning?
+How are you today?
+How does a language model work?
+Thank you very much for the lovely dinner.
+Good morning, how did you sleep?
+It is a beautiful day for a walk in the park.
+The snow covered the whole village in white.
+The river flows slowly through the valley.
+The library is open from nine in the morning.
+The cat is sleeping on the warm windowsill.
+The garden is full of flowers in the spring.
+The train was late again this morning.
+The computer is fast but the program is slow.
+A few words like the, of and and appear very often.
+A sentence boundary stops words from different sentences forming false pairs.
+A corpus is a large collection of text.
+Words that appear together often tend to belong together.
+Every word has a context.
+We went to the beach last summer.
+We went to the museum on Saturday.
+We had a great time at the party.
+We are planning a trip to the mountains.
+My favourite subject at school was mathematics.
+Your idea is very interesting.
+This model is simple enough to explain in an interview.
+Statistics is the science of learning from data.
+Mathematics is the language of science.
+Learning to code opened many doors for me.
+Practice every day and you will improve.
+Interpolation mixes the predictions of several models.
+A random seed makes the generated text reproducible.
+Generated text from a bigram model often sounds strange.
+Tomorrow is another day.
+Today is a good day to learn something new.
+On Sundays we cook a big family dinner.
+In the morning the city is quiet.
+In the evening the streets are full of people.
+In the summer we swim in the lake.
+When the data is small, smoothing becomes very important.

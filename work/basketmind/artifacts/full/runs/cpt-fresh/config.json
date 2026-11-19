@@ -1,0 +1,32 @@
+{
+ "lm": {
+  "lora_rank": 16,
+  "lora_alpha": 32.0,
+  "lora_targets": [
+   "c_attn",
+   "c_fc"
+  ],
+  "full_finetune": false,
+  "n_products": 1000
+ },
+ "base": "openai-community/gpt2",
+ "train": {
+  "ordering": "fresh",
+  "steps": 500,
+  "batch_size": 64,
+  "lr": 0.001,
+  "warmup": 30,
+  "weight_decay": 0.0,
+  "eval_every": 50,
+  "n_val": 512,
+  "seed": 0,
+  "threads": 8,
+  "train_subset": null
+ },
+ "steps_done": 500,
+ "params": {
+  "total": 87939840,
+  "trainable": 2098944,
+  "percent": 2.38679533644819
+ }
+}

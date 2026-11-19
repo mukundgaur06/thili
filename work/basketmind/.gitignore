@@ -1,0 +1,5 @@
+# generated datasets (rebuilt by `run generate`); the package code in basketmind/data/ is NOT data
+/data/
+!basketmind/data/
+artifacts/*/runs/*/train_state.pt
+__pycache__/

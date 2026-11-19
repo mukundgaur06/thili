@@ -1,0 +1,7 @@
+streamlit>=1.30
+plotly>=5
+pandas
+psutil
+onnx
+onnxruntime
+# torch and torchvision come from the lfvision image (CPU wheels)

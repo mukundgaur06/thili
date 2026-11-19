@@ -1,0 +1,4756 @@
+{
+ "n_baskets": 100000,
+ "min_support": 0.001,
+ "max_size": 5,
+ "seconds": 7.41,
+ "levels": [
+  {
+   "size": 1,
+   "candidates": 1000,
+   "frequent": 928
+  },
+  {
+   "size": 2,
+   "candidates": 430128,
+   "frequent": 2073
+  },
+  {
+   "size": 3,
+   "candidates": 17474,
+   "frequent": 1341
+  },
+  {
+   "size": 4,
+   "candidates": 1323,
+   "frequent": 1099
+  },
+  {
+   "size": 5,
+   "candidates": 540,
+   "frequent": 512
+  }
+ ],
+ "n_frequent": 5953,
+ "by_label": {
+  "single": 928,
+  "part": 300,
+  "planted": 32,
+  "chance": 1917,
+  "extension": 2776
+ },
+ "bruteforce_check": {
+  "baskets": 2000,
+  "min_support": 0.005,
+  "max_size": 4,
+  "identical": true,
+  "seconds": 0.98
+ },
+ "planted_on_full_data": [
+  {
+   "items": [
+    0,
+    82
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    131,
+    819
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    45,
+    298,
+    424
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    309,
+    363,
+    710
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    58,
+    97,
+    418,
+    421
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    117,
+    491,
+    825,
+    947
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.03001,
+   "recovered": true
+  },
+  {
+   "items": [
+    68,
+    117,
+    167,
+    267,
+    411
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    45,
+    117,
+    250,
+    819,
+    947
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "found_support": 0.03,
+   "recovered": true
+  },
+  {
+   "items": [
+    68,
+    144
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    571,
+    881
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    662,
+    670,
+    676
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    427,
+    639,
+    930
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    465,
+    491,
+    498,
+    545
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    29,
+    267,
+    368,
+    881
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    82,
+    103,
+    117,
+    327,
+    334
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    97,
+    267,
+    385,
+    600,
+    881
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "found_support": 0.01,
+   "recovered": true
+  },
+  {
+   "items": [
+    216,
+    231
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    206,
+    639
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    760,
+    766,
+    787
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    103,
+    418,
+    595
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    787,
+    790,
+    805,
+    825
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    144,
+    309,
+    571,
+    825
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    450,
+    498,
+    516,
+    519,
+    536
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    163,
+    327,
+    491,
+    766,
+    947
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "found_support": 0.004,
+   "recovered": true
+  },
+  {
+   "items": [
+    450,
+    455
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    0,
+    752
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    144,
+    571,
+    576
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.00152,
+   "recovered": true
+  },
+  {
+   "items": [
+    418,
+    734,
+    851
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    163,
+    363,
+    918,
+    959
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    58,
+    259,
+    427,
+    670
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    851,
+    881,
+    889,
+    902,
+    908
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  },
+  {
+   "items": [
+    144,
+    421,
+    610,
+    790,
+    991
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "found_support": 0.0015,
+   "recovered": true
+  }
+ ],
+ "planted_rows": [
+  {
+   "items": [
+    0,
+    82
+   ],
+   "names": [
+    "Oven Lane Bread Classic",
+    "Alpine Pure Butter Regular"
+   ],
+   "bases": [
+    "Bread",
+    "Butter"
+   ],
+   "categories": [
+    "Bakery",
+    "Dairy"
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 107,
+   "target_count": 3000,
+   "planting_probability": 0.028960988257435455
+  },
+  {
+   "items": [
+    131,
+    819
+   ],
+   "names": [
+    "Bluebell Creamery Cream Cheese Organic",
+    "Coreline Tennis Balls Standard"
+   ],
+   "bases": [
+    "Cream Cheese",
+    "Tennis Balls"
+   ],
+   "categories": [
+    "Dairy",
+    "Sports"
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 1,
+   "target_count": 3000,
+   "planting_probability": 0.02999029990299903
+  },
+  {
+   "items": [
+    45,
+    298,
+    424
+   ],
+   "names": [
+    "Rye & Co Tortillas Family Pack",
+    "Casa Verde Salsa Organic",
+    "Avocados Pack"
+   ],
+   "bases": [
+    "Avocados",
+    "Salsa",
+    "Tortillas"
+   ],
+   "categories": [
+    "Bakery",
+    "Pantry",
+    "Produce"
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 1,
+   "target_count": 3000,
+   "planting_probability": 0.02999029990299903
+  },
+  {
+   "items": [
+    309,
+    363,
+    710
+   ],
+   "names": [
+    "Casa Verde Canned Tomatoes Regular",
+    "Snaxly Chocolate Bar Share Size",
+    "Lumiere Deodorant Regular"
+   ],
+   "bases": [
+    "Canned Tomatoes",
+    "Chocolate Bar",
+    "Deodorant"
+   ],
+   "categories": [
+    "Beauty",
+    "Pantry",
+    "Snacks"
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 0,
+   "target_count": 3000,
+   "planting_probability": 0.03
+  },
+  {
+   "items": [
+    58,
+    97,
+    418,
+    421
+   ],
+   "names": [
+    "Oven Lane Burger Buns Classic",
+    "Bluebell Creamery Cheddar Cheese Regular",
+    "Tomatoes Pack",
+    "Onions Pack"
+   ],
+   "bases": [
+    "Burger Buns",
+    "Cheddar Cheese",
+    "Onions",
+    "Tomatoes"
+   ],
+   "categories": [
+    "Bakery",
+    "Dairy",
+    "Produce"
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 0,
+   "target_count": 3000,
+   "planting_probability": 0.03
+  },
+  {
+   "items": [
+    117,
+    491,
+    825,
+    947
+   ],
+   "names": [
+    "Alpine Pure Eggs Regular",
+    "Nimbus Tech Laptop Bag Lite",
+    "Stridewell Gym Towel Standard",
+    "Lantern Press Notebook Pocket"
+   ],
+   "bases": [
+    "Eggs",
+    "Gym Towel",
+    "Laptop Bag",
+    "Notebook"
+   ],
+   "categories": [
+    "Books",
+    "Dairy",
+    "Electronics",
+    "Sports"
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "realised_support": 0.03001,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 0,
+   "target_count": 3000,
+   "planting_probability": 0.03
+  },
+  {
+   "items": [
+    68,
+    117,
+    167,
+    267,
+    411
+   ],
+   "names": [
+    "Meadow Farm Milk Organic",
+    "Alpine Pure Eggs Regular",
+    "Brewhaus Orange Juice Regular",
+    "Harvest Table Cereal Value Size",
+    "Bananas Loose"
+   ],
+   "bases": [
+    "Bananas",
+    "Cereal",
+    "Eggs",
+    "Milk",
+    "Orange Juice"
+   ],
+   "categories": [
+    "Beverages",
+    "Dairy",
+    "Pantry",
+    "Produce"
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 0,
+   "target_count": 3000,
+   "planting_probability": 0.03
+  },
+  {
+   "items": [
+    45,
+    117,
+    250,
+    819,
+    947
+   ],
+   "names": [
+    "Rye & Co Tortillas Family Pack",
+    "Alpine Pure Eggs Regular",
+    "Pantrywise Rice Value Size",
+    "Coreline Tennis Balls Standard",
+    "Lantern Press Notebook Pocket"
+   ],
+   "bases": [
+    "Eggs",
+    "Notebook",
+    "Rice",
+    "Tennis Balls",
+    "Tortillas"
+   ],
+   "categories": [
+    "Bakery",
+    "Books",
+    "Dairy",
+    "Pantry",
+    "Sports"
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.03,
+   "realised_support": 0.03,
+   "intended_support_range": [
+    0.027,
+    0.0375
+   ],
+   "chance_count": 0,
+   "target_count": 3000,
+   "planting_probability": 0.03
+  },
+  {
+   "items": [
+    68,
+    144
+   ],
+   "names": [
+    "Meadow Farm Milk Organic",
+    "Brewhaus Coffee Regular"
+   ],
+   "bases": [
+    "Coffee",
+    "Milk"
+   ],
+   "categories": [
+    "Beverages",
+    "Dairy"
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 182,
+   "target_count": 1000,
+   "planting_probability": 0.0081949147448356
+  },
+  {
+   "items": [
+    571,
+    881
+   ],
+   "names": [
+    "Homestead Coffee Maker Deluxe",
+    "Kestrel Socks Kids"
+   ],
+   "bases": [
+    "Coffee Maker",
+    "Socks"
+   ],
+   "categories": [
+    "Fashion",
+    "Home Appliances"
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 17,
+   "target_count": 1000,
+   "planting_probability": 0.009831671384135304
+  },
+  {
+   "items": [
+    662,
+    670,
+    676
+   ],
+   "names": [
+    "Velvetine Shampoo Regular",
+    "Northglow Conditioner Regular",
+    "Lumiere Body Wash Travel Size"
+   ],
+   "bases": [
+    "Body Wash",
+    "Conditioner",
+    "Shampoo"
+   ],
+   "categories": [
+    "Beauty"
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    427,
+    639,
+    930
+   ],
+   "names": [
+    "Lemons Pack",
+    "Homestead Vacuum Bags Deluxe",
+    "Quill House Cookbook Paperback"
+   ],
+   "bases": [
+    "Cookbook",
+    "Lemons",
+    "Vacuum Bags"
+   ],
+   "categories": [
+    "Books",
+    "Home Appliances",
+    "Produce"
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    465,
+    491,
+    498,
+    545
+   ],
+   "names": [
+    "Voltix Laptop Lite",
+    "Nimbus Tech Laptop Bag Lite",
+    "Voltix USB Cable Standard",
+    "Nimbus Tech Keyboard Pro"
+   ],
+   "bases": [
+    "Keyboard",
+    "Laptop",
+    "Laptop Bag",
+    "USB Cable"
+   ],
+   "categories": [
+    "Electronics"
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    29,
+    267,
+    368,
+    881
+   ],
+   "names": [
+    "Millstone Croissants Classic",
+    "Harvest Table Cereal Value Size",
+    "Happy Bite Cookies Regular",
+    "Kestrel Socks Kids"
+   ],
+   "bases": [
+    "Cereal",
+    "Cookies",
+    "Croissants",
+    "Socks"
+   ],
+   "categories": [
+    "Bakery",
+    "Fashion",
+    "Pantry",
+    "Snacks"
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    82,
+    103,
+    117,
+    327,
+    334
+   ],
+   "names": [
+    "Alpine Pure Butter Regular",
+    "Cloud Nine Dairy Yogurt Regular",
+    "Alpine Pure Eggs Regular",
+    "Pantrywise Flour Regular",
+    "Harvest Table Sugar Organic"
+   ],
+   "bases": [
+    "Butter",
+    "Eggs",
+    "Flour",
+    "Sugar",
+    "Yogurt"
+   ],
+   "categories": [
+    "Dairy",
+    "Pantry"
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    97,
+    267,
+    385,
+    600,
+    881
+   ],
+   "names": [
+    "Bluebell Creamery Cheddar Cheese Regular",
+    "Harvest Table Cereal Value Size",
+    "Nutty Path Popcorn Mini",
+    "Kitchora Blender Standard",
+    "Kestrel Socks Kids"
+   ],
+   "bases": [
+    "Blender",
+    "Cereal",
+    "Cheddar Cheese",
+    "Popcorn",
+    "Socks"
+   ],
+   "categories": [
+    "Dairy",
+    "Fashion",
+    "Home Appliances",
+    "Pantry",
+    "Snacks"
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.01,
+   "realised_support": 0.01,
+   "intended_support_range": [
+    0.009000000000000001,
+    0.0125
+   ],
+   "chance_count": 0,
+   "target_count": 1000,
+   "planting_probability": 0.01
+  },
+  {
+   "items": [
+    216,
+    231
+   ],
+   "names": [
+    "Casa Verde Pasta Organic",
+    "Harvest Table Pasta Sauce Organic"
+   ],
+   "bases": [
+    "Pasta",
+    "Pasta Sauce"
+   ],
+   "categories": [
+    "Pantry"
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 4,
+   "target_count": 400,
+   "planting_probability": 0.003960158406336254
+  },
+  {
+   "items": [
+    206,
+    639
+   ],
+   "names": [
+    "Morning Ritual Energy Drink Regular",
+    "Homestead Vacuum Bags Deluxe"
+   ],
+   "bases": [
+    "Energy Drink",
+    "Vacuum Bags"
+   ],
+   "categories": [
+    "Beverages",
+    "Home Appliances"
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 7,
+   "target_count": 400,
+   "planting_probability": 0.003930275119258348
+  },
+  {
+   "items": [
+    760,
+    766,
+    787
+   ],
+   "names": [
+    "Peakform Running Shoes Pro",
+    "Stridewell Sports Socks Standard",
+    "Trailmark Water Bottle Standard"
+   ],
+   "bases": [
+    "Running Shoes",
+    "Sports Socks",
+    "Water Bottle"
+   ],
+   "categories": [
+    "Sports"
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    103,
+    418,
+    595
+   ],
+   "names": [
+    "Cloud Nine Dairy Yogurt Regular",
+    "Tomatoes Pack",
+    "Homestead Toaster Deluxe"
+   ],
+   "bases": [
+    "Toaster",
+    "Tomatoes",
+    "Yogurt"
+   ],
+   "categories": [
+    "Dairy",
+    "Home Appliances",
+    "Produce"
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    787,
+    790,
+    805,
+    825
+   ],
+   "names": [
+    "Trailmark Water Bottle Standard",
+    "Stridewell Yoga Mat Standard",
+    "Peakform Protein Bar Standard",
+    "Stridewell Gym Towel Standard"
+   ],
+   "bases": [
+    "Gym Towel",
+    "Protein Bar",
+    "Water Bottle",
+    "Yoga Mat"
+   ],
+   "categories": [
+    "Sports"
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    144,
+    309,
+    571,
+    825
+   ],
+   "names": [
+    "Brewhaus Coffee Regular",
+    "Casa Verde Canned Tomatoes Regular",
+    "Homestead Coffee Maker Deluxe",
+    "Stridewell Gym Towel Standard"
+   ],
+   "bases": [
+    "Canned Tomatoes",
+    "Coffee",
+    "Coffee Maker",
+    "Gym Towel"
+   ],
+   "categories": [
+    "Beverages",
+    "Home Appliances",
+    "Pantry",
+    "Sports"
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    450,
+    498,
+    516,
+    519,
+    536
+   ],
+   "names": [
+    "Kepler Labs Smartphone Pro",
+    "Voltix USB Cable Standard",
+    "Arcwave Headphones Lite",
+    "Voltix Power Bank Standard",
+    "Arcwave Screen Protector Standard"
+   ],
+   "bases": [
+    "Headphones",
+    "Power Bank",
+    "Screen Protector",
+    "Smartphone",
+    "USB Cable"
+   ],
+   "categories": [
+    "Electronics"
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    163,
+    327,
+    491,
+    766,
+    947
+   ],
+   "names": [
+    "Fizzco Tea Premium",
+    "Pantrywise Flour Regular",
+    "Nimbus Tech Laptop Bag Lite",
+    "Stridewell Sports Socks Standard",
+    "Lantern Press Notebook Pocket"
+   ],
+   "bases": [
+    "Flour",
+    "Laptop Bag",
+    "Notebook",
+    "Sports Socks",
+    "Tea"
+   ],
+   "categories": [
+    "Beverages",
+    "Books",
+    "Electronics",
+    "Pantry",
+    "Sports"
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.004,
+   "realised_support": 0.004,
+   "intended_support_range": [
+    0.0036000000000000003,
+    0.005
+   ],
+   "chance_count": 0,
+   "target_count": 400,
+   "planting_probability": 0.004
+  },
+  {
+   "items": [
+    450,
+    455
+   ],
+   "names": [
+    "Kepler Labs Smartphone Pro",
+    "Nimbus Tech Phone Case Standard"
+   ],
+   "bases": [
+    "Phone Case",
+    "Smartphone"
+   ],
+   "categories": [
+    "Electronics"
+   ],
+   "size": 2,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 7,
+   "target_count": 150,
+   "planting_probability": 0.0014301001070074904
+  },
+  {
+   "items": [
+    0,
+    752
+   ],
+   "names": [
+    "Oven Lane Bread Classic",
+    "Northglow Razor Travel Size"
+   ],
+   "bases": [
+    "Bread",
+    "Razor"
+   ],
+   "categories": [
+    "Bakery",
+    "Beauty"
+   ],
+   "size": 2,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 19,
+   "target_count": 150,
+   "planting_probability": 0.001310248947299987
+  },
+  {
+   "items": [
+    144,
+    571,
+    576
+   ],
+   "names": [
+    "Brewhaus Coffee Regular",
+    "Homestead Coffee Maker Deluxe",
+    "Kitchora Coffee Filters Standard"
+   ],
+   "bases": [
+    "Coffee",
+    "Coffee Filters",
+    "Coffee Maker"
+   ],
+   "categories": [
+    "Beverages",
+    "Home Appliances"
+   ],
+   "size": 3,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "realised_support": 0.00152,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 4,
+   "target_count": 150,
+   "planting_probability": 0.0014600584023360934
+  },
+  {
+   "items": [
+    418,
+    734,
+    851
+   ],
+   "names": [
+    "Tomatoes Pack",
+    "Lumiere Sunscreen Travel Size",
+    "Threadline Jeans Kids"
+   ],
+   "bases": [
+    "Jeans",
+    "Sunscreen",
+    "Tomatoes"
+   ],
+   "categories": [
+    "Beauty",
+    "Fashion",
+    "Produce"
+   ],
+   "size": 3,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 0,
+   "target_count": 150,
+   "planting_probability": 0.0015
+  },
+  {
+   "items": [
+    163,
+    363,
+    918,
+    959
+   ],
+   "names": [
+    "Fizzco Tea Premium",
+    "Snaxly Chocolate Bar Share Size",
+    "Quill House Novel Paperback",
+    "Lantern Press Bookmark Pocket"
+   ],
+   "bases": [
+    "Bookmark",
+    "Chocolate Bar",
+    "Novel",
+    "Tea"
+   ],
+   "categories": [
+    "Beverages",
+    "Books",
+    "Snacks"
+   ],
+   "size": 4,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 0,
+   "target_count": 150,
+   "planting_probability": 0.0015
+  },
+  {
+   "items": [
+    58,
+    259,
+    427,
+    670
+   ],
+   "names": [
+    "Oven Lane Burger Buns Classic",
+    "Spice Route Olive Oil Value Size",
+    "Lemons Pack",
+    "Northglow Conditioner Regular"
+   ],
+   "bases": [
+    "Burger Buns",
+    "Conditioner",
+    "Lemons",
+    "Olive Oil"
+   ],
+   "categories": [
+    "Bakery",
+    "Beauty",
+    "Pantry",
+    "Produce"
+   ],
+   "size": 4,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 0,
+   "target_count": 150,
+   "planting_probability": 0.0015
+  },
+  {
+   "items": [
+    851,
+    881,
+    889,
+    902,
+    908
+   ],
+   "names": [
+    "Threadline Jeans Kids",
+    "Kestrel Socks Kids",
+    "Urban Loom Baseball Cap Premium",
+    "Kestrel Rain Jacket Standard",
+    "Threadline Umbrella Standard"
+   ],
+   "bases": [
+    "Baseball Cap",
+    "Jeans",
+    "Rain Jacket",
+    "Socks",
+    "Umbrella"
+   ],
+   "categories": [
+    "Fashion"
+   ],
+   "size": 5,
+   "kind": "natural",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 0,
+   "target_count": 150,
+   "planting_probability": 0.0015
+  },
+  {
+   "items": [
+    144,
+    421,
+    610,
+    790,
+    991
+   ],
+   "names": [
+    "Brewhaus Coffee Regular",
+    "Onions Pack",
+    "Hearthline Kettle Deluxe",
+    "Stridewell Yoga Mat Standard",
+    "Lantern Press Pens Paperback"
+   ],
+   "bases": [
+    "Coffee",
+    "Kettle",
+    "Onions",
+    "Pens",
+    "Yoga Mat"
+   ],
+   "categories": [
+    "Beverages",
+    "Books",
+    "Home Appliances",
+    "Produce",
+    "Sports"
+   ],
+   "size": 5,
+   "kind": "surprising",
+   "target_support": 0.0015,
+   "realised_support": 0.0015,
+   "intended_support_range": [
+    0.00135,
+    0.001875
+   ],
+   "chance_count": 0,
+   "target_count": 150,
+   "planting_probability": 0.0015
+  }
+ ],
+ "n_rules": 8685,
+ "top_rules": [
+  {
+   "antecedent": [
+    163,
+    363,
+    918
+   ],
+   "consequent": [
+    959
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 409.8360655737705,
+   "leverage": 0.00149634,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    163,
+    918
+   ],
+   "consequent": [
+    959
+   ],
+   "support": 0.0015,
+   "confidence": 0.925925925925926,
+   "lift": 379.477838494232,
+   "leverage": 0.0014960472,
+   "conviction": 13.467060000000021,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    363,
+    918
+   ],
+   "consequent": [
+    959
+   ],
+   "support": 0.0015,
+   "confidence": 0.8379888268156425,
+   "lift": 343.43804377690265,
+   "leverage": 0.0014956324000000001,
+   "conviction": 6.157353103448276,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    790,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 318.47133757961785,
+   "leverage": 0.00149529,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    790,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 318.47133757961785,
+   "leverage": 0.00149529,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    790
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 316.36225587379255,
+   "leverage": 0.0014952586,
+   "conviction": 150.52585999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    790,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 316.36225587379255,
+   "leverage": 0.0014952586,
+   "conviction": 150.52585999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 312.22680154864497,
+   "leverage": 0.0014951958,
+   "conviction": 50.83986000000018,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    902
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    902
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    902,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    902,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    902,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 310.5590062111801,
+   "leverage": 0.00149517,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    902,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.9868421052631579,
+   "lift": 306.4727034978751,
+   "leverage": 0.0014951056,
+   "conviction": 75.75527999999976,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    902
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 304.4696139325295,
+   "leverage": 0.0014950734000000001,
+   "conviction": 50.83578000000018,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    790,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.9554140127388535,
+   "lift": 304.27197857925273,
+   "leverage": 0.0014950702,
+   "conviction": 22.35814571428572,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.9740259740259741,
+   "lift": 302.49253851738325,
+   "leverage": 0.0014950412,
+   "conviction": 38.37603000000015,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    163,
+    363
+   ],
+   "consequent": [
+    959
+   ],
+   "support": 0.00151,
+   "confidence": 0.7089201877934272,
+   "lift": 290.54106057107674,
+   "leverage": 0.0015048028,
+   "conviction": 3.427101290322581,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.9202453987730062,
+   "lift": 285.79049651335595,
+   "leverage": 0.0014947514,
+   "conviction": 12.498087692307696,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    908
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.847457627118644,
+   "lift": 263.1855984840509,
+   "leverage": 0.0014943006,
+   "conviction": 6.534446666666665,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.00151,
+   "confidence": 0.825136612021858,
+   "lift": 262.78236051651527,
+   "leverage": 0.0015042538000000002,
+   "conviction": 5.700793125000001,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    790
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.7614213197969544,
+   "lift": 242.49086617737402,
+   "leverage": 0.0014938142,
+   "conviction": 4.178328085106384,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    889
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 241.5458937198068,
+   "leverage": 0.00149379,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 241.5458937198068,
+   "leverage": 0.00149379,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    889,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 241.5458937198068,
+   "leverage": 0.00149379,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 241.5458937198068,
+   "leverage": 0.00149379,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    889,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 241.5458937198068,
+   "leverage": 0.00149379,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    889
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 239.94625203954317,
+   "leverage": 0.0014937486,
+   "conviction": 150.37485999999922,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 239.94625203954317,
+   "leverage": 0.0014937486,
+   "conviction": 150.37485999999922,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    991
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.75,
+   "lift": 238.8535031847134,
+   "leverage": 0.00149372,
+   "conviction": 3.98744,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.9740259740259741,
+   "lift": 235.27197440240923,
+   "leverage": 0.0014936244,
+   "conviction": 38.34061000000015,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.9740259740259741,
+   "lift": 235.27197440240923,
+   "leverage": 0.0014936244,
+   "conviction": 38.34061000000015,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    790
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.7177033492822967,
+   "lift": 228.5679456313047,
+   "leverage": 0.0014934374,
+   "conviction": 3.5312498305084756,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.9202453987730062,
+   "lift": 222.28149728816575,
+   "leverage": 0.0014932518,
+   "conviction": 12.48655230769231,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    58,
+    427,
+    670
+   ],
+   "consequent": [
+    259
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 215.48318512878708,
+   "leverage": 0.0014930389,
+   "conviction": 150.30388999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    908
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.847457627118644,
+   "lift": 204.69990993203965,
+   "leverage": 0.0014926722,
+   "conviction": 6.528415555555553,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889,
+    902
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889,
+    902
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    902,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889,
+    902,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889,
+    902,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 187.6172607879925,
+   "leverage": 0.001492005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 186.37476237217797,
+   "leverage": 0.0014919517,
+   "conviction": 150.19516999999925,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    902,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.9868421052631579,
+   "lift": 185.14861261972945,
+   "leverage": 0.0014918984,
+   "conviction": 75.59491999999977,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    902
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 183.93849096862013,
+   "leverage": 0.0014918451,
+   "conviction": 50.72817000000018,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.9740259740259741,
+   "lift": 182.7440851831096,
+   "leverage": 0.0014917918,
+   "conviction": 38.29479500000015,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    766,
+    787
+   ],
+   "consequent": [
+    760
+   ],
+   "support": 0.004,
+   "confidence": 0.9732360097323601,
+   "lift": 171.6465625630265,
+   "leverage": 0.0039766963,
+   "conviction": 37.15178454545459,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    519
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 162.07455429497568,
+   "leverage": 0.00397532,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 162.07455429497568,
+   "leverage": 0.00397532,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    519,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 162.07455429497568,
+   "leverage": 0.00397532,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    519,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 162.07455429497568,
+   "leverage": 0.00397532,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    519,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 162.07455429497568,
+   "leverage": 0.00397532,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    519
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9975062344139652,
+   "lift": 161.67037834910295,
+   "leverage": 0.0039752583,
+   "conviction": 398.5258300000248,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9950248756218906,
+   "lift": 161.26821322883154,
+   "leverage": 0.0039751966000000005,
+   "conviction": 199.7598300000009,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    519,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9925558312655087,
+   "lift": 160.8680439652364,
+   "leverage": 0.0039751349,
+   "conviction": 133.5044966666674,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9876543209876544,
+   "lift": 160.07363387158094,
+   "leverage": 0.0039750115,
+   "conviction": 80.50023000000037,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    536
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9828009828009828,
+   "lift": 159.28703124813336,
+   "leverage": 0.0039748881,
+   "conviction": 57.7841157142858,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    908
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.847457627118644,
+   "lift": 158.99767863389195,
+   "leverage": 0.0014905659,
+   "conviction": 6.520614444444443,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    418,
+    734
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.0015,
+   "confidence": 0.8426966292134832,
+   "lift": 158.1044332483083,
+   "leverage": 0.0014905126,
+   "conviction": 6.323259285714289,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    418,
+    851
+   ],
+   "consequent": [
+    734
+   ],
+   "support": 0.0015,
+   "confidence": 0.8670520231213873,
+   "lift": 157.07464186981656,
+   "leverage": 0.0014904504,
+   "conviction": 7.480219130434784,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    427,
+    670
+   ],
+   "consequent": [
+    259
+   ],
+   "support": 0.00151,
+   "confidence": 0.7190476190476192,
+   "lift": 155.9756223530627,
+   "leverage": 0.001500319,
+   "conviction": 3.5429135593220353,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    519
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.004,
+   "confidence": 0.9302325581395349,
+   "lift": 150.76702725114018,
+   "leverage": 0.003973469,
+   "conviction": 14.244896666666664,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    103,
+    418
+   ],
+   "consequent": [
+    595
+   ],
+   "support": 0.004,
+   "confidence": 0.6814310051107325,
+   "lift": 150.75907192715323,
+   "leverage": 0.0039734676,
+   "conviction": 3.124848983957219,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516,
+    519
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 142.85714285714286,
+   "leverage": 0.003972,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 142.85714285714286,
+   "leverage": 0.003972,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    519,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 142.85714285714286,
+   "leverage": 0.003972,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    516,
+    519,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 142.85714285714286,
+   "leverage": 0.003972,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516,
+    519,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 142.85714285714286,
+   "leverage": 0.003972,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    516,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9975062344139652,
+   "lift": 142.50089063056646,
+   "leverage": 0.00397193,
+   "conviction": 398.1930000000248,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    516,
+    519
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9950248756218906,
+   "lift": 142.14641080312722,
+   "leverage": 0.00397186,
+   "conviction": 199.5930000000009,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    519,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9925558312655087,
+   "lift": 141.79369018078697,
+   "leverage": 0.00397179,
+   "conviction": 133.39300000000074,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    58,
+    670
+   ],
+   "consequent": [
+    259
+   ],
+   "support": 0.0015,
+   "confidence": 0.6493506493506493,
+   "lift": 140.85697382877424,
+   "leverage": 0.0014893509,
+   "conviction": 2.8387048148148146,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9828009828009828,
+   "lift": 140.4001404001404,
+   "leverage": 0.00397151,
+   "conviction": 57.73585714285722,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    536
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9828009828009828,
+   "lift": 140.4001404001404,
+   "leverage": 0.00397151,
+   "conviction": 57.73585714285722,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    519
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.004,
+   "confidence": 0.9302325581395349,
+   "lift": 132.89036544850498,
+   "leverage": 0.0039699,
+   "conviction": 14.232999999999997,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    610
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 128.2051282051282,
+   "leverage": 0.0014883000000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    610,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 128.2051282051282,
+   "leverage": 0.0014883000000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    610,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 128.2051282051282,
+   "leverage": 0.0014883000000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    610,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 128.2051282051282,
+   "leverage": 0.0014883000000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 127.35608762098829,
+   "leverage": 0.001488222,
+   "conviction": 149.82219999999924,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    610,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 0.9868421052631579,
+   "lift": 126.51821862348179,
+   "leverage": 0.001488144,
+   "conviction": 75.40719999999976,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    58,
+    427
+   ],
+   "consequent": [
+    259
+   ],
+   "support": 0.0015,
+   "confidence": 0.5791505791505792,
+   "lift": 125.62919287431218,
+   "leverage": 0.0014880601,
+   "conviction": 2.3651927522935785,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    610
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 0.9554140127388535,
+   "lift": 122.48897599216072,
+   "leverage": 0.001487754,
+   "conviction": 22.253628571428575,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    610
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.00151,
+   "confidence": 0.94375,
+   "lift": 120.99358974358975,
+   "leverage": 0.00149752,
+   "conviction": 17.639111111111102,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    889
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    889,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881,
+    889,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 112.73957158962797,
+   "leverage": 0.0014866950000000001,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889
+   ],
+   "consequent": [
+    902
+   ],
+   "support": 0.0015,
+   "confidence": 0.4658385093167702,
+   "lift": 112.5213790620218,
+   "leverage": 0.0014866692,
+   "conviction": 1.8643425581395348,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    902
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.0015,
+   "confidence": 0.3623188405797102,
+   "lift": 112.5213790620218,
+   "leverage": 0.0014866692,
+   "conviction": 1.563132272727273,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    889
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 111.99295191022645,
+   "leverage": 0.0014866063,
+   "conviction": 149.66062999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    902
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 110.52899175453723,
+   "leverage": 0.0014864289,
+   "conviction": 50.547630000000176,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    881,
+    889
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 0.9740259740259741,
+   "lift": 109.81127102885841,
+   "leverage": 0.0014863402000000001,
+   "conviction": 38.15850500000015,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421
+   ],
+   "consequent": [
+    610
+   ],
+   "support": 0.0015,
+   "confidence": 0.33333333333333337,
+   "lift": 106.1571125265393,
+   "leverage": 0.00148587,
+   "conviction": 1.49529,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    516
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 104.60251046025104,
+   "leverage": 0.00396176,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 104.60251046025104,
+   "leverage": 0.00396176,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    516,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 104.60251046025104,
+   "leverage": 0.00396176,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 104.60251046025104,
+   "leverage": 0.00396176,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498,
+    516,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 104.60251046025104,
+   "leverage": 0.00396176,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9975062344139652,
+   "lift": 104.34165631945243,
+   "leverage": 0.0039616644,
+   "conviction": 397.16644000002475,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    516
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9950248756218906,
+   "lift": 104.0820999604488,
+   "leverage": 0.0039615688,
+   "conviction": 199.0784400000009,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    516,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9950248756218906,
+   "lift": 104.0820999604488,
+   "leverage": 0.0039615688,
+   "conviction": 199.0784400000009,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851,
+    881
+   ],
+   "consequent": [
+    908
+   ],
+   "support": 0.0015,
+   "confidence": 0.9202453987730062,
+   "lift": 103.74807201499506,
+   "leverage": 0.0014855419,
+   "conviction": 12.427245384615386,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450,
+    498
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9876543209876544,
+   "lift": 103.31112144222325,
+   "leverage": 0.003961282,
+   "conviction": 80.22564000000037,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    516
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9828009828009828,
+   "lift": 102.80345008378481,
+   "leverage": 0.0039610908,
+   "conviction": 57.58701142857151,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    163,
+    363,
+    959
+   ],
+   "consequent": [
+    918
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 101.36504933099067,
+   "leverage": 0.0014852020000000001,
+   "conviction": 149.52019999999922,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    163,
+    959
+   ],
+   "consequent": [
+    918
+   ],
+   "support": 0.0015,
+   "confidence": 0.9868421052631579,
+   "lift": 100.69817400644469,
+   "leverage": 0.0014851040000000001,
+   "conviction": 75.25519999999976,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    363,
+    959
+   ],
+   "consequent": [
+    918
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 100.04001600640257,
+   "leverage": 0.001485006,
+   "conviction": 50.50020000000018,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.0015,
+   "confidence": 0.7614213197969544,
+   "lift": 97.61811792268647,
+   "leverage": 0.001484634,
+   "conviction": 4.158795744680852,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    519
+   ],
+   "consequent": [
+    536
+   ],
+   "support": 0.004,
+   "confidence": 0.9302325581395349,
+   "lift": 97.30466089325678,
+   "leverage": 0.003958892,
+   "conviction": 14.196306666666663,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    516
+   ],
+   "consequent": [
+    450
+   ],
+   "support": 0.00402,
+   "confidence": 0.6515397082658023,
+   "lift": 93.0771011808289,
+   "leverage": 0.00397681,
+   "conviction": 2.849679069767442,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    450
+   ],
+   "consequent": [
+    516
+   ],
+   "support": 0.00402,
+   "confidence": 0.5742857142857143,
+   "lift": 93.07710118082889,
+   "leverage": 0.00397681,
+   "conviction": 2.3345,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    790
+   ],
+   "consequent": [
+    991
+   ],
+   "support": 0.00151,
+   "confidence": 0.7224880382775121,
+   "lift": 92.62667157404002,
+   "leverage": 0.0014936980000000001,
+   "conviction": 3.575341379310346,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    787,
+    805,
+    825
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.004,
+   "confidence": 1.0,
+   "lift": 92.08103130755065,
+   "leverage": 0.0039565600000000005,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    610
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 92.08103130755065,
+   "leverage": 0.00148371,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    610,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 92.08103130755065,
+   "leverage": 0.00148371,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    610,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 1.0,
+   "lift": 92.08103130755065,
+   "leverage": 0.00148371,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    610,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 91.47122315319601,
+   "leverage": 0.0014836014000000001,
+   "conviction": 149.36013999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    610,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.9933774834437086,
+   "lift": 91.47122315319601,
+   "leverage": 0.0014836014000000001,
+   "conviction": 149.36013999999923,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    421,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.9803921568627452,
+   "lift": 90.27552088975554,
+   "leverage": 0.0014833842,
+   "conviction": 50.44614000000018,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    787,
+    805
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.004,
+   "confidence": 0.9732360097323601,
+   "lift": 89.61657548180112,
+   "leverage": 0.0039553654,
+   "conviction": 36.95786727272732,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    889
+   ],
+   "consequent": [
+    851
+   ],
+   "support": 0.00151,
+   "confidence": 0.468944099378882,
+   "lift": 87.98200738815798,
+   "leverage": 0.0014928374,
+   "conviction": 1.8730043274853805,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    851
+   ],
+   "consequent": [
+    889
+   ],
+   "support": 0.00151,
+   "confidence": 0.2833020637898687,
+   "lift": 87.98200738815798,
+   "leverage": 0.0014928374,
+   "conviction": 1.3907951308900524,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    421,
+    610
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.9554140127388535,
+   "lift": 87.97550761867896,
+   "leverage": 0.0014829498,
+   "conviction": 22.18499714285715,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    760,
+    766
+   ],
+   "consequent": [
+    787
+   ],
+   "support": 0.004,
+   "confidence": 0.9975062344139652,
+   "lift": 87.57736913204259,
+   "leverage": 0.0039543261,
+   "conviction": 396.4326100000247,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    787,
+    825
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.004,
+   "confidence": 0.9501187648456056,
+   "lift": 87.48791573163956,
+   "leverage": 0.0039542794,
+   "conviction": 19.829901904761883,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    790,
+    805,
+    825
+   ],
+   "consequent": [
+    787
+   ],
+   "support": 0.004,
+   "confidence": 0.9925558312655087,
+   "lift": 87.14274198994808,
+   "leverage": 0.0039540983,
+   "conviction": 132.8032766666674,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    610
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.9375,
+   "lift": 86.32596685082873,
+   "leverage": 0.001482624,
+   "conviction": 15.82624,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    117,
+    465,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.00112,
+   "confidence": 1.0,
+   "lift": 85.17887563884156,
+   "leverage": 0.0011068512,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    465,
+    491,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.00112,
+   "confidence": 1.0,
+   "lift": 85.17887563884156,
+   "leverage": 0.0011068512,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    465,
+    491
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 85.17887563884156,
+   "leverage": 0.00098826,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    465,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 85.17887563884156,
+   "leverage": 0.00098826,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    465,
+    491,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 85.17887563884156,
+   "leverage": 0.00098826,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    465,
+    491,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.01,
+   "confidence": 0.999000999000999,
+   "lift": 85.09378185698458,
+   "leverage": 0.0098824826,
+   "conviction": 989.2482600000335,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    790,
+    805
+   ],
+   "consequent": [
+    787
+   ],
+   "support": 0.004,
+   "confidence": 0.9685230024213075,
+   "lift": 85.03274823716484,
+   "leverage": 0.0039529593,
+   "conviction": 31.407379230769234,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    465,
+    491
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.01,
+   "confidence": 0.9900990099009902,
+   "lift": 84.3355204344966,
+   "leverage": 0.009881426,
+   "conviction": 99.81426000000103,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    465,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.01,
+   "confidence": 0.9900990099009902,
+   "lift": 84.3355204344966,
+   "leverage": 0.009881426,
+   "conviction": 99.81426000000103,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.00988,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    267,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.00988,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    117,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.00121524,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    117,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.00121524,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    267,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.00121524,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    411,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.0011362,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    267,
+    411,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 1.0,
+   "lift": 83.33333333333333,
+   "leverage": 0.0011362,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    267,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 0.999000999000999,
+   "lift": 83.25008325008325,
+   "leverage": 0.00987988,
+   "conviction": 988.9880000000335,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    267,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 0.9970089730807576,
+   "lift": 83.08408109006314,
+   "leverage": 0.00987964,
+   "conviction": 330.3213333333241,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    117,
+    267,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 0.9919354838709677,
+   "lift": 82.66129032258064,
+   "leverage": 0.0012151199999999999,
+   "conviction": 122.51200000000011,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    411,
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9913793103448275,
+   "lift": 82.61494252873563,
+   "leverage": 0.00113608,
+   "conviction": 114.60799999999904,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    267,
+    411,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9913793103448275,
+   "lift": 82.61494252873563,
+   "leverage": 0.00113608,
+   "conviction": 114.60799999999904,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    600,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 0.9900990099009902,
+   "lift": 82.50825082508251,
+   "leverage": 0.0098788,
+   "conviction": 99.78800000000103,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 0.9861932938856016,
+   "lift": 82.1827744904668,
+   "leverage": 0.00987832,
+   "conviction": 71.55942857142878,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    267,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01,
+   "confidence": 0.9852216748768474,
+   "lift": 82.10180623973729,
+   "leverage": 0.0098782,
+   "conviction": 66.85466666666726,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    117,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 0.984,
+   "lift": 82.0,
+   "leverage": 0.001215,
+   "conviction": 61.74999999999994,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    117,
+    267,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 0.984,
+   "lift": 82.0,
+   "leverage": 0.001215,
+   "conviction": 61.74999999999994,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    411,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9829059829059829,
+   "lift": 81.9088319088319,
+   "leverage": 0.0011359599999999999,
+   "conviction": 57.79799999999983,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    790,
+    825
+   ],
+   "consequent": [
+    787
+   ],
+   "support": 0.004,
+   "confidence": 0.9324009324009324,
+   "lift": 81.86136368752697,
+   "leverage": 0.0039511369,
+   "conviction": 14.62460999999999,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    805,
+    825
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.00403,
+   "confidence": 0.8799126637554585,
+   "lift": 81.02326553917666,
+   "leverage": 0.0039802612,
+   "conviction": 8.236838545454546,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    267,
+    411,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9663865546218486,
+   "lift": 80.53221288515405,
+   "leverage": 0.00113572,
+   "conviction": 29.39299999999991,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    491,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 80.45052292839904,
+   "leverage": 0.0009875700000000001,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 80.45052292839904,
+   "leverage": 0.0009875700000000001,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    491,
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.001,
+   "confidence": 1.0,
+   "lift": 80.45052292839904,
+   "leverage": 0.0009875700000000001,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    491,
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.01,
+   "confidence": 0.999000999000999,
+   "lift": 80.37015277562341,
+   "leverage": 0.0098755757,
+   "conviction": 988.5575700000334,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    267,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01001,
+   "confidence": 0.9643545279383429,
+   "lift": 80.36287732819524,
+   "leverage": 0.00988544,
+   "conviction": 27.717405405405326,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    491,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.01001,
+   "confidence": 0.9416745061147694,
+   "lift": 80.2107756486175,
+   "leverage": 0.009885203799999999,
+   "conviction": 16.94387709677417,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    117,
+    465,
+    491
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.00112,
+   "confidence": 0.9411764705882352,
+   "lift": 80.1683535424391,
+   "leverage": 0.0011060293999999998,
+   "conviction": 16.800419999999963,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    491,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.01,
+   "confidence": 0.9960159362549801,
+   "lift": 80.13000291673211,
+   "leverage": 0.0098752028,
+   "conviction": 247.88007000000022,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.01,
+   "confidence": 0.9960159362549801,
+   "lift": 80.13000291673211,
+   "leverage": 0.0098752028,
+   "conviction": 247.88007000000022,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    117,
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.00112,
+   "confidence": 0.9911504424778761,
+   "lift": 79.73857139805922,
+   "leverage": 0.0011059541,
+   "conviction": 111.59540999999982,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    491,
+    498,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.00112,
+   "confidence": 0.9911504424778761,
+   "lift": 79.73857139805922,
+   "leverage": 0.0011059541,
+   "conviction": 111.59540999999982,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    491,
+    498
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.001,
+   "confidence": 0.9259259259259259,
+   "lift": 78.86932929522366,
+   "leverage": 0.0009873208,
+   "conviction": 13.341510000000001,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    117,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 0.9389312977099237,
+   "lift": 78.2442748091603,
+   "leverage": 0.0012142799999999999,
+   "conviction": 16.178500000000003,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    411,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9349593495934959,
+   "lift": 77.91327913279133,
+   "leverage": 0.00113524,
+   "conviction": 15.190499999999995,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    491,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.00112,
+   "confidence": 0.9655172413793103,
+   "lift": 77.67636696535078,
+   "leverage": 0.0011055811999999999,
+   "conviction": 28.63952999999994,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    267,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00123,
+   "confidence": 0.9318181818181818,
+   "lift": 77.65151515151514,
+   "leverage": 0.00121416,
+   "conviction": 14.490666666666655,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    267,
+    411,
+    600
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.00115,
+   "confidence": 0.9274193548387096,
+   "lift": 77.28494623655914,
+   "leverage": 0.0011351199999999999,
+   "conviction": 13.612444444444435,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    805,
+    825
+   ],
+   "consequent": [
+    787
+   ],
+   "support": 0.004,
+   "confidence": 0.8733624454148472,
+   "lift": 76.67800223132986,
+   "leverage": 0.0039478338,
+   "conviction": 7.806610000000002,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    97,
+    881
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01001,
+   "confidence": 0.9200367647058822,
+   "lift": 76.66973039215685,
+   "leverage": 0.00987944,
+   "conviction": 12.355678160919524,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    491,
+    498
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.01001,
+   "confidence": 0.9416745061147694,
+   "lift": 75.75820644527509,
+   "leverage": 0.0098778691,
+   "conviction": 16.932046935483847,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    82,
+    103,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 1.0,
+   "lift": 75.58578987150416,
+   "leverage": 0.0098677,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    82,
+    103,
+    117,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 1.0,
+   "lift": 75.58578987150416,
+   "leverage": 0.0098677,
+   "conviction": Infinity,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    82,
+    103,
+    327,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 1.0,
+   "lift": 75.58578987150416,
+   "leverage": 0.0010163731000000001,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    103,
+    117,
+    327,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 1.0,
+   "lift": 75.58578987150416,
+   "leverage": 0.0010163731000000001,
+   "conviction": Infinity,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    82,
+    117,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 0.999000999000999,
+   "lift": 75.51027959191225,
+   "leverage": 0.0098675677,
+   "conviction": 987.7567700000335,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    144,
+    991
+   ],
+   "consequent": [
+    790
+   ],
+   "support": 0.0015,
+   "confidence": 0.819672131147541,
+   "lift": 75.47625517012348,
+   "leverage": 0.0014801262,
+   "conviction": 5.48523090909091,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    103,
+    117,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 0.9980039920159681,
+   "lift": 75.43492003144128,
+   "leverage": 0.009867435400000001,
+   "conviction": 494.37177000001446,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    103,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 0.9910802775024777,
+   "lift": 74.9115856010943,
+   "leverage": 0.0098665093,
+   "conviction": 110.62788111111155,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    103,
+    327,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 0.9903846153846155,
+   "lift": 74.85900343043201,
+   "leverage": 0.0010162408000000001,
+   "conviction": 102.62408000000156,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    82,
+    117,
+    327,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 0.9903846153846155,
+   "lift": 74.85900343043201,
+   "leverage": 0.0010162408000000001,
+   "conviction": 102.62408000000156,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    82,
+    103,
+    117
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 0.9881422924901185,
+   "lift": 74.68951568330449,
+   "leverage": 0.0098661124,
+   "conviction": 83.21760333333303,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    0,
+    491,
+    498
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.001,
+   "confidence": 0.9259259259259259,
+   "lift": 74.49122493370281,
+   "leverage": 0.0009865756,
+   "conviction": 13.332195,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    82,
+    327,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 0.9809523809523811,
+   "lift": 74.14606054061838,
+   "leverage": 0.0010161085000000001,
+   "conviction": 51.80542500000049,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    82,
+    327
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.01,
+   "confidence": 0.9765624999999999,
+   "lift": 73.81424792139077,
+   "leverage": 0.0098645248,
+   "conviction": 42.10218666666647,
+   "planted_pair": true
+  },
+  {
+   "antecedent": [
+    82,
+    103,
+    117,
+    411
+   ],
+   "consequent": [
+    334
+   ],
+   "support": 0.00103,
+   "confidence": 0.9626168224299066,
+   "lift": 72.76015286696195,
+   "leverage": 0.0010158439,
+   "conviction": 26.396097500000078,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    0,
+    465
+   ],
+   "consequent": [
+    545
+   ],
+   "support": 0.001,
+   "confidence": 0.847457627118644,
+   "lift": 72.18548782952675,
+   "leverage": 0.0009861468,
+   "conviction": 6.478593333333332,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    117,
+    545
+   ],
+   "consequent": [
+    465
+   ],
+   "support": 0.00112,
+   "confidence": 0.8959999999999999,
+   "lift": 72.08366854384553,
+   "leverage": 0.0011044624999999998,
+   "conviction": 9.495865384615376,
+   "planted_pair": false
+  },
+  {
+   "antecedent": [
+    97,
+    267
+   ],
+   "consequent": [
+    385
+   ],
+   "support": 0.01001,
+   "confidence": 0.8644214162348878,
+   "lift": 72.03511801957399,
+   "leverage": 0.00987104,
+   "conviction": 7.287286624203824,
+   "planted_pair": true
+  }
+ ],
+ "ceiling": {
+  "2000": {
+   "planted_recall": {
+    "estimate": 0.9609375,
+    "lo": 0.95,
+    "hi": 0.9734375,
+    "n": 20,
+    "n_boot": 2000,
+    "seed": 1
+   },
+   "by_support": {
+    "0.03": 1.0,
+    "0.01": 1.0,
+    "0.004": 0.99375,
+    "0.0015": 0.85
+   },
+   "repetitions": 20
+  },
+  "10000": {
+   "planted_recall": {
+    "estimate": 0.9875,
+    "lo": 0.978125,
+    "hi": 0.9953125,
+    "n": 20,
+    "n_boot": 2000,
+    "seed": 1
+   },
+   "by_support": {
+    "0.03": 1.0,
+    "0.01": 1.0,
+    "0.004": 1.0,
+    "0.0015": 0.95
+   },
+   "repetitions": 20
+  }
+ },
+ "truth_recall_bands": [
+  {
+   "band": [
+    0.001,
+    0.002
+   ],
+   "true": 76,
+   "found": 76,
+   "recall": 1.0
+  },
+  {
+   "band": [
+    0.002,
+    0.005
+   ],
+   "true": 85,
+   "found": 85,
+   "recall": 1.0
+  },
+  {
+   "band": [
+    0.005,
+    0.01
+   ],
+   "true": 5,
+   "found": 5,
+   "recall": 1.0
+  },
+  {
+   "band": [
+    0.01,
+    0.03
+   ],
+   "true": 83,
+   "found": 83,
+   "recall": 1.0
+  },
+  {
+   "band": [
+    0.03,
+    1.0
+   ],
+   "true": 83,
+   "found": 83,
+   "recall": 1.0
+  }
+ ]
+}

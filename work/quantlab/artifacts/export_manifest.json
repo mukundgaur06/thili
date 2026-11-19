@@ -1,0 +1,92 @@
+{
+ "meta": {
+  "dataset": "fashion_mnist",
+  "torch": "2.10.0+cpu"
+ },
+ "exports": {
+  "fp32": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/fp32.ts",
+    "bytes": 853632,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/fp32.onnx",
+    "bytes": 829257,
+    "max_abs_diff": 9.5367431640625e-06,
+    "prediction_agreement": 1.0,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "ok": true
+   }
+  ],
+  "fp16": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/fp16.ts",
+    "bytes": 441162,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   }
+  ],
+  "dynamic_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/dynamic_int8.ts",
+    "bytes": 256200,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   }
+  ],
+  "static_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/static_int8.ts",
+    "bytes": 244191,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/static_int8.onnx",
+    "bytes": 220101,
+    "max_abs_diff": 0.19655990600585938,
+    "prediction_agreement": 0.9994999766349792,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "output_step": 0.19655853509902954,
+    "max_diff_in_steps": 1.0000069745474505,
+    "ok": true
+   }
+  ],
+  "qat_int8": [
+   {
+    "format": "torchscript",
+    "path": "artifacts/models/qat_int8.ts",
+    "bytes": 245868,
+    "max_abs_diff": 0.0,
+    "same_predictions": true,
+    "ok": true
+   },
+   {
+    "format": "onnx",
+    "path": "artifacts/models/qat_int8.onnx",
+    "bytes": 220101,
+    "max_abs_diff": 0.1943035125732422,
+    "prediction_agreement": 0.9991999864578247,
+    "checked_images": 10000,
+    "runtime": "onnxruntime 1.23.2",
+    "output_step": 0.1943025290966034,
+    "max_diff_in_steps": 1.0000050615740483,
+    "ok": true
+   }
+  ]
+ }
+}

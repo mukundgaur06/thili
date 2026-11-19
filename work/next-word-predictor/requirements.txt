@@ -1,0 +1,7 @@
+# WordFlow has NO runtime dependencies: the engine, the API server and the dashboard
+# use only the Python standard library (3.10+) and vanilla HTML/CSS/JS.
+#
+# It therefore runs unchanged inside the LearnFast `lfllm` container.
+#
+# Optional, for development only (the tests are plain unittest and run without it):
+# pytest>=8

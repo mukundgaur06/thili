@@ -1,0 +1,7 @@
+[lora-r8-c_attn] trainable 296,448 / 124,736,256 = 0.238% | LoRA on 12 layers
+dev accuracy before training (random head): 0.580
+step  125/500 | loss 0.2613 | dev 0.860 |   123s | rss 1363 MB
+step  250/500 | loss 0.5430 | dev 0.852 |   244s | rss 1526 MB
+step  375/500 | loss 0.0280 | dev 0.870 |   365s | rss 1526 MB
+step  500/500 | loss 0.3003 | dev 0.876 |   476s | rss 1591 MB
+[lora-r8-c_attn] best dev 0.876 at step 500 | TEST accuracy 0.8601 | 476s | peak RSS 1591 MB | adapter 1161 KB

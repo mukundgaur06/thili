@@ -1,0 +1,24 @@
+LEDGAR (LexGLUE): {'train': 60000, 'test': 10000, 'validation': 10000} | 100 clause types
+most common: Governing Laws 3167, Notices 2493, Counterparts 2427, Entire Agreements 2340, Severability 1808, Survival 1469
+rarest:      Sanctions 118, Anti-Corruption Laws 106, Qualifications 47, Assigns 31, Books 23
+majority-class guess would score 5.3%
+clause length in GPT-2 tokens (3,000 sample): p50 106, p90 292, p99 616
+
+One clause per type, first 160 characters:
+  <Waivers>  'Except as otherwise set forth in this Debenture, the Company, for itself and its legal representatives, successors and assigns, expressly waives presentment, pr'
+  <Erisa>  'No ERISA Event has occurred or is reasonably expected to occur that, when taken together with all other such ERISA Events for which liability is reasonably expe'
+  <Counterparts>  'This Amendment may be executed by one or more of the parties hereto on any number of separate counterparts, and all of said counterparts taken together shall be'
+  <Further Assurances>  'From time to time, as and when required by the Surviving Corporation or by its successors or assigns, there shall be executed and delivered on behalf of Ashford'
+  <Base Salary>  'Commencing March 7, 2016 and during the Employment Period, the Company shall pay to the Executive a base salary at the rate of no less than $750,000 per calenda'
+  <Notices>  'All notices required or permitted under this Agreement will be in writing, will reference this Agreement, and will be deemed given: (i) when delivered personall'
+
+Before extending the tokenizer, '<Governing Laws>' is 6 pieces: ['<', 'G', 'over', 'ning', ' Laws', '>']
+after adding 101 tokens it is [50305] (one id); vocab 50358
+
+Training text: 'Except as otherwise set forth in this Debenture, the Company, for itself and its ...<Label><Waivers><|endoftext|>'
+Encoded with a 24-token cut; only the last two positions are graded:
+            ' assigns'  label -100 (ignored)
+                   ','  label -100 (ignored)
+             '<Label>'  label -100 (ignored)
+           '<Waivers>'  label <Waivers>
+       '<|endoftext|>'  label <|endoftext|>

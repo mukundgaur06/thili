@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordFlow Laboratory</title>
+  <meta name="description" content="WordFlow: a statistical next-word prediction engine built from n-gram counts.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23245c73'/%3E%3Cpath d='M7 21h5M14 21h5M21 21h4M7 15h8M17 15h8M7 9h12' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="progress" class="progress" aria-hidden="true"></div>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <div class="brand-name">WORD FLOW</div>
+          <div class="brand-sub">Statistical Language Modeling Laboratory</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav" aria-label="Pages"></nav>
+      <div class="model-card" id="model-card" aria-live="polite">Loading model…</div>
+    </aside>
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="menu-btn" id="menu-btn" aria-label="Open navigation">☰</button>
+        <div>
+          <div class="eyebrow" id="page-eyebrow"></div>
+          <h1 id="page-title">WordFlow</h1>
+        </div>
+      </header>
+      <main id="page" class="page" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="alert" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

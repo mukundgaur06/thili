@@ -1,0 +1,9 @@
+adapter lora-r1-c_attn.safetensors: 78 KB, 38,400 numbers, meta {'targets': 'c_attn', 'rank': '1', 'alpha': '16', 'test_acc': '0.8796', 'mode': 'lora', 'task': 'sst2', 'base': 'openai-community/gpt2'}
+merge: max |logit diff| = 6.91e-06, test acc 0.8796 -> 0.8796
+unmerge restores W0: max diff 3.81e-06 | stripped model has 0 LoRA layers, diff 6.91e-06
+latency for one batch of 64x45: unmerged 3905 ms, merged 3319 ms, plain GPT-2 3903 ms
+
+swap: 3 adapters on disk; one base model serves those with the same LoRA layout
+  activate lora-r1-c_attn               in   8.77 ms -> test acc 0.8796
+  deactivate -> base GPT-2 LM logits differ from a fresh GPT-2 by 0.00e+00
+  for comparison, reloading the whole base model takes 2349 ms

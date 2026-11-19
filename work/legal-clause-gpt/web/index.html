@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clause Tagger</title>
+<style>
+  :root { --bg:#f7f6f2; --card:#fff; --ink:#1d1c1a; --muted:#6b6862; --line:#e3e0d8; --accent:#2f5d8a; --bar:#cfdcea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#171716; --card:#20201e; --ink:#ecebe7; --muted:#a19e97; --line:#34332f; --accent:#8db6e0; --bar:#2c3e52; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.sub { color: var(--muted); margin: 0 0 20px; }
+  textarea { width:100%; min-height:140px; padding:12px; border:1px solid var(--line); border-radius:8px;
+             background:var(--card); color:var(--ink); font:inherit; resize:vertical; }
+  .row { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 24px; align-items:center; }
+  button { font:inherit; border:1px solid var(--line); background:var(--card); color:var(--ink);
+           border-radius:999px; padding:5px 12px; cursor:pointer; }
+  button.primary { background:var(--accent); color:var(--bg); border-color:var(--accent); padding:7px 18px; }
+  .hint { color:var(--muted); font-size:13px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-bottom:12px; }
+  .tag { font: 600 16px ui-monospace, "Cascadia Mono", Consolas, monospace; color:var(--accent); }
+  .clause { color:var(--muted); font-size:13px; margin:4px 0 10px; }
+  .alt { display:grid; grid-template-columns: 170px 1fr 44px; gap:8px; align-items:center; font-size:13px; margin:3px 0; }
+  .track { height:8px; background:var(--line); border-radius:4px; overflow:hidden; }
+  .fill { height:100%; background:var(--bar); }
+  .alt:first-child .fill { background:var(--accent); }
+  .num { text-align:right; font-variant-numeric: tabular-nums; color:var(--muted); }
+  .warn { font-size:12px; color:var(--muted); margin-top:6px; }
+  @media (max-width: 520px) { .alt { grid-template-columns: 120px 1fr 40px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Clause Tagger</h1>
+  <p class="sub">GPT-2 fine-tuned on LEDGAR. Paste contract clauses, one per line, and it names each clause's type.</p>
+  <textarea id="in">This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflict of laws principles.</textarea>
+  <div class="row">
+    <button class="primary" id="go">Tag clauses</button>
+    <span class="hint">Examples:</span>
+    <button data-ex="This Agreement may be executed in any number of counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument.">Counterparts</button>
+    <button data-ex="If any provision of this Agreement is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.">Severability</button>
+    <button data-ex="All notices hereunder shall be in writing and shall be deemed given when delivered personally or sent by certified mail to the addresses set forth above.">Notices</button>
+    <button data-ex="The Executive shall receive an annual base salary of $350,000, payable in accordance with the Company's regular payroll practices.">Salary</button>
+  </div>
+  <div id="out"></div>
+</main>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.querySelectorAll("[data-ex]").forEach((b) => b.onclick = () => { $("#in").value = b.dataset.ex; run(); });
+$("#go").onclick = run;
+async function run() {
+  const clauses = $("#in").value.split("\n").map((s) => s.trim()).filter(Boolean);
+  if (!clauses.length) return;
+  $("#out").innerHTML = '<p class="hint">Tagging…</p>';
+  try {
+    const r = await fetch("/api/tag", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({clauses})});
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.error || r.status);
+    $("#out").innerHTML = data.map((d) => `
+      <div class="card">
+        <div class="tag">${esc(d.tag)}</div>
+        <div class="clause">${esc(d.clause.length > 240 ? d.clause.slice(0, 240) + "…" : d.clause)}</div>
+        <div>${d.top.map(([t, p]) => `
+          <div class="alt"><span>${esc(t)}</span><div class="track"><div class="fill" style="width:${(p * 100).toFixed(1)}%"></div></div><span class="num">${Math.round(p * 100)}%</span></div>`).join("")}
+        </div>
+        ${d.valid ? "" : `<div class="warn">Unconstrained generation produced ${esc(d.generated)}; shown is the best clause type.</div>`}
+      </div>`).join("");
+  } catch (e) {
+    $("#out").innerHTML = `<p class="hint">Error: ${esc(String(e.message || e))}</p>`;
+  }
+}
+</script>
+</body>
+</html>
