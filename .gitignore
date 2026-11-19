@@ -24,3 +24,7 @@ datasets/
 __pycache__/
 .venv/
 .DS_Store
+
+# Re-downloadable by scripts/build_fantasy_corpus.py; model is reproducible from the corpus
+work/next-word-predictor/corpus/fantasy/raw/
+work/next-word-predictor/models/fantasy_model.json
